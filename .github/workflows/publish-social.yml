@@ -23,7 +23,7 @@ jobs:
 
       - name: Publish pending posts to Buffer
         env:
-          BUFFER_API_KEY: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+         BUFFER_CHANNEL_IDS: ${{ secrets.BUFFER_CHANNEL_IDS }}
           BUFFER_CHANNEL_IDS: ${{ secrets.BUFFER_PROFILE_IDS }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_REF_NAME: ${{ github.ref_name }}
