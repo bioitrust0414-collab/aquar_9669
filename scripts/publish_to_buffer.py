@@ -31,13 +31,20 @@ from pathlib import Path
 import requests
 
 
+DEBUG_LOG_PATH = Path("social-posts/.last-run-debug.log")
+
+
 def log_summary(text):
-    """Write diagnostic text to the GitHub Actions job summary, if available."""
-    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    """Print and append diagnostic text to a repo-tracked debug log file.
+
+    (GITHUB_STEP_SUMMARY is not retrievable via the GitHub API, only in
+    the web UI, so writing to a tracked file that the workflow commits
+    back is the only way to inspect run output outside the browser.)
+    """
     print(text)
-    if summary_path:
-        with open(summary_path, "a", encoding="utf-8") as f:
-            f.write(text + "\n\n")
+    DEBUG_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(DEBUG_LOG_PATH, "a", encoding="utf-8") as f:
+        f.write(text + "\n\n")
 
 BUFFER_API_URL = "https://api.buffer.com"
 PENDING_DIR = Path("social-posts/pending")

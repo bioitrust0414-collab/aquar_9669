@@ -29,7 +29,8 @@ jobs:
           GITHUB_REF_NAME: ${{ github.ref_name }}
         run: python scripts/publish_to_buffer.py
 
-      - name: Commit published/ moves
+      - name: Commit published/ moves and debug log
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
