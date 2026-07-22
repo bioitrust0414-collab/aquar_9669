@@ -87,6 +87,7 @@ def create_post(api_key, channel_id, text, image_urls):
             "input": {
                 "text": text,
                 "channelId": channel_id,
+                "type": "post",
                 "schedulingType": "automatic",
                 "mode": "addToQueue",
                 "assets": build_assets(image_urls),
