@@ -90,7 +90,7 @@ def create_post(api_key, channel_id, text, image_urls):
                 "schedulingType": "automatic",
                 "mode": "addToQueue",
                 "assets": build_assets(image_urls),
-                "metadata": {"type": "post"},
+                "metadata": {"facebook": {"type": "post"}},
             }
         },
     }
