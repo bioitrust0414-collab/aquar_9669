@@ -71,13 +71,15 @@ Python 腳本讀取 publish.json
 
 | Secret 名稱 | 說明 | 取得方式 |
 |------------|------|---------|
-| `BUFFER_ACCESS_TOKEN` | Buffer 的 API 存取金鑰 | Buffer 帳號 → Settings → Apps → Access Token |
-| `BUFFER_PROFILE_IDS` | 要發布的社群帳號 ID（JSON 陣列格式） | Buffer API：`GET /1/profiles.json` |
+| `BUFFER_ACCESS_TOKEN` | Buffer 的**新版 personal API key**（Bearer token，**不是**舊版 OAuth access token） | Buffer 帳號 → Settings → 開發者 / API 頁面產生 personal API key |
+| `BUFFER_CHANNEL_IDS` | 要發布的社群頻道 ID（JSON 陣列格式） | 透過 Buffer 新版 GraphQL API 查詢頻道 ID |
 
-**BUFFER_PROFILE_IDS 格式範例：**
+**BUFFER_CHANNEL_IDS 格式範例：**
 ```json
-["PROFILE_ID_FB", "PROFILE_ID_IG"]
+["CHANNEL_ID_FB", "CHANNEL_ID_IG"]
 ```
+
+⚠️ 若使用舊版 OAuth access token，Buffer API 會回傳 `401 Access token is not valid`，貼文會一直卡在 `pending/` 無法發布。
 
 ---
 
