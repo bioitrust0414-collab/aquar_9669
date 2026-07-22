@@ -25,9 +25,19 @@ import json
 import os
 import shutil
 import sys
+import traceback
 from pathlib import Path
 
 import requests
+
+
+def log_summary(text):
+    """Write diagnostic text to the GitHub Actions job summary, if available."""
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    print(text)
+    if summary_path:
+        with open(summary_path, "a", encoding="utf-8") as f:
+            f.write(text + "\n\n")
 
 BUFFER_API_URL = "https://api.buffer.com"
 PENDING_DIR = Path("social-posts/pending")
@@ -85,10 +95,21 @@ def create_post(api_key, channel_id, text, image_urls):
         json=payload,
         timeout=30,
     )
-    resp.raise_for_status()
+
+    if resp.status_code != 200:
+        log_summary(
+            f"### Buffer HTTP {resp.status_code} for channel {channel_id}\n"
+            f"```\n{resp.text[:2000]}\n```"
+        )
+        return False, f"HTTP {resp.status_code}: {resp.text[:500]}"
+
     data = resp.json()
 
     if "errors" in data and data["errors"]:
+        log_summary(
+            f"### Buffer GraphQL errors for channel {channel_id}\n"
+            f"```\n{json.dumps(data['errors'], ensure_ascii=False, indent=2)[:2000]}\n```"
+        )
         return False, str(data["errors"])
 
     result = data.get("data", {}).get("createPost", {})
@@ -130,27 +151,34 @@ def main():
             for fn in image_filenames
         ]
 
-        print(f"Publishing {post_dir.name} to {len(channel_ids)} channel(s)...")
+        log_summary(f"## Publishing `{post_dir.name}` to {len(channel_ids)} channel(s)")
+        log_summary(f"Image URLs: {image_urls}")
         all_ok = True
         for channel_id in channel_ids:
             ok, result = create_post(api_key, channel_id, text, image_urls)
             if ok:
-                print(f"  OK channel={channel_id} post_id={result.get('id')}")
+                log_summary(f"OK channel={channel_id} post_id={result.get('id')}")
             else:
                 all_ok = False
-                print(f"  FAILED channel={channel_id}: {result}", file=sys.stderr)
+                log_summary(f"FAILED channel={channel_id}: {result}")
 
         if all_ok:
             dest = PUBLISHED_DIR / post_dir.name
             shutil.move(str(post_dir), str(dest))
-            print(f"  Moved {post_dir.name} -> {dest}")
+            log_summary(f"Moved {post_dir.name} -> {dest}")
         else:
             any_failed = True
-            print(f"  Left {post_dir.name} in pending/ (will retry next push)")
+            log_summary(f"Left {post_dir.name} in pending/ (will retry next push)")
 
     if any_failed:
         sys.exit(1)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception:
+        log_summary(f"### Unhandled exception\n```\n{traceback.format_exc()}\n```")
+        sys.exit(1)
