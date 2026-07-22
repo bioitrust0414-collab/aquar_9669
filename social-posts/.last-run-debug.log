@@ -1,0 +1,13 @@
+## Publishing `example-post` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/example-post/image1.jpg']
+
+### Buffer HTTP 401 for channel 67b40123456789abcdef0123
+```
+{"errors":[{"message":"Access token is not valid","extensions":{"code":"UNAUTHENTICATED"}}]}
+```
+
+FAILED channel=67b40123456789abcdef0123: HTTP 401: {"errors":[{"message":"Access token is not valid","extensions":{"code":"UNAUTHENTICATED"}}]}
+
+Left example-post in pending/ (will retry next push)
+
