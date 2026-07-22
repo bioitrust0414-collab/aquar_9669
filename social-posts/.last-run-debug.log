@@ -27,3 +27,29 @@ FAILED channel=6a605f5ee2638b94d7b1e3fe: Invalid post: Facebook posts require a 
 
 Left example-post in pending/ (will retry next push)
 
+## Publishing `example-post` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/example-post/image1.jpg']
+
+### Buffer GraphQL errors for channel 6a605f5ee2638b94d7b1e3fe
+```
+[
+  {
+    "message": "Variable \"$input\" got invalid value { text: \"這是透過 GitHub Actions + Buffer 自動發布的測試貼文！\\n\\n#自動化 #社群行銷 #測試\\n\\n(觸發測試 v5 by Claude)\", channelId: \"6a605f5ee2638b94d7b1e3fe\", type: \"post\", schedulingType: \"automatic\", mode: \"addToQueue\", assets: [{ image: [Object] }] }; Field \"type\" is not defined by type \"CreatePostInput\".",
+    "locations": [
+      {
+        "line": 2,
+        "column": 21
+      }
+    ],
+    "extensions": {
+      "code": "INTERNAL_SERVER_ERROR"
+    }
+  }
+]
+```
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: [{'message': 'Variable "$input" got invalid value { text: "這是透過 GitHub Actions + Buffer 自動發布的測試貼文！\\n\\n#自動化 #社群行銷 #測試\\n\\n(觸發測試 v5 by Claude)", channelId: "6a605f5ee2638b94d7b1e3fe", type: "post", schedulingType: "automatic", mode: "addToQueue", assets: [{ image: [Object] }] }; Field "type" is not defined by type "CreatePostInput".', 'locations': [{'line': 2, 'column': 21}], 'extensions': {'code': 'INTERNAL_SERVER_ERROR'}}]
+
+Left example-post in pending/ (will retry next push)
+
