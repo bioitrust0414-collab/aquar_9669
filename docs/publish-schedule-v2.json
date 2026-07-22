@@ -1,7 +1,7 @@
 {
   "repo": "github.com/bioitrust0414-collab/aquar_9669",
   "brand": "私密保養品牌 Aquar",
-  "generated_note": "v2.1 correction: earlier v2 mistakenly treated 5 of the 6 archived \"_needs-manual-match\" image sets as unused alternate-style drafts. A full md5 duplicate check found those 5 sets (investment-mockup-b, long-term-stability, long-termism, wise-choices, effortless-as-ever) are byte-identical duplicates of images already live in kepu-10.1~10.5 - they were never spare material, just redundant copies, and have been deleted from archive/. Only investment-mockup-a (renamed folder: archive/topic10-unused-concept-draft) was confirmed genuinely unique and unused; it remains as the sole Week 7 bonus item. Core 58-piece order (Week 1-6, funnel logic) is unchanged.",
+  "generated_note": "v2.1 correction: earlier v2 mistakenly treated 5 of the 6 archived \"_needs-manual-match\" image sets as unused alternate-style drafts. A full md5 duplicate check found those 5 sets (investment-mockup-b, long-term-stability, long-termism, wise-choices, effortless-as-ever) are byte-identical duplicates of images already live in kepu-10.1~10.5 - they were never spare material, just redundant copies, and have been deleted from archive/. Only investment-mockup-a (renamed folder: archive/topic10-unused-concept-draft) was confirmed genuinely unique and unused; it remains as the sole bonus item at the end of the sequence. Core 58-piece order (funnel logic) is unchanged.",
   "total_pieces_core": 58,
   "total_pieces_bonus": 1,
   "total_pieces": 59,
@@ -23,9 +23,7 @@
         "data.jpg"
       ],
       "known_gap": "缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾",
-      "status": "ready_with_accepted_gap",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready_with_accepted_gap"
     },
     {
       "sequence": 2,
@@ -43,9 +41,7 @@
         "card-5.png"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 3,
@@ -63,9 +59,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 4,
@@ -83,9 +77,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 5,
@@ -103,9 +95,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 6,
@@ -122,9 +112,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 7,
@@ -142,9 +130,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 8,
@@ -162,9 +148,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 9,
@@ -182,9 +166,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 10,
@@ -202,9 +184,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 11,
@@ -222,9 +202,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 1,
-      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+      "status": "ready"
     },
     {
       "sequence": 12,
@@ -240,9 +218,7 @@
         "data.jpg"
       ],
       "known_gap": "缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾",
-      "status": "ready_with_accepted_gap",
-      "week": 2,
-      "week_label": "Week 2 - 痛點共感（惡性循環）"
+      "status": "ready_with_accepted_gap"
     },
     {
       "sequence": 13,
@@ -260,9 +236,7 @@
         "card-5.png"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 2,
-      "week_label": "Week 2 - 痛點共感（惡性循環）"
+      "status": "ready"
     },
     {
       "sequence": 14,
@@ -280,9 +254,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 2,
-      "week_label": "Week 2 - 痛點共感（惡性循環）"
+      "status": "ready"
     },
     {
       "sequence": 15,
@@ -300,9 +272,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 2,
-      "week_label": "Week 2 - 痛點共感（惡性循環）"
+      "status": "ready"
     },
     {
       "sequence": 16,
@@ -320,9 +290,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 2,
-      "week_label": "Week 2 - 痛點共感（惡性循環）"
+      "status": "ready"
     },
     {
       "sequence": 17,
@@ -340,9 +308,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 2,
-      "week_label": "Week 2 - 痛點共感（惡性循環）"
+      "status": "ready"
     },
     {
       "sequence": 18,
@@ -359,9 +325,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 19,
@@ -379,9 +343,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 20,
@@ -399,9 +361,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 21,
@@ -419,9 +379,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 22,
@@ -439,9 +397,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 23,
@@ -464,9 +420,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 24,
@@ -483,9 +437,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 25,
@@ -503,9 +455,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 26,
@@ -523,9 +473,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 27,
@@ -543,9 +491,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 28,
@@ -563,9 +509,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 29,
@@ -583,9 +527,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 3,
-      "week_label": "Week 3 - 科學論證（分子與成分）"
+      "status": "ready"
     },
     {
       "sequence": 30,
@@ -602,9 +544,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 31,
@@ -622,9 +562,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 32,
@@ -642,9 +580,7 @@
         "card-5.png"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 33,
@@ -662,9 +598,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 34,
@@ -682,9 +616,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 35,
@@ -702,9 +634,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 36,
@@ -721,9 +651,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 37,
@@ -741,9 +669,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 38,
@@ -761,9 +687,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 39,
@@ -781,9 +705,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 40,
@@ -801,9 +723,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 4,
-      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+      "status": "ready"
     },
     {
       "sequence": 41,
@@ -820,9 +740,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 42,
@@ -840,9 +758,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 43,
@@ -860,9 +776,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 44,
@@ -880,9 +794,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 45,
@@ -900,9 +812,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 46,
@@ -920,9 +830,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 47,
@@ -939,9 +847,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 48,
@@ -959,9 +865,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 49,
@@ -979,9 +883,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 50,
@@ -999,9 +901,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 51,
@@ -1019,9 +919,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 52,
@@ -1039,9 +937,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 5,
-      "week_label": "Week 5 - 生活整合（儀式與季節）"
+      "status": "ready"
     },
     {
       "sequence": 53,
@@ -1058,9 +954,7 @@
         "cta.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 6,
-      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+      "status": "ready"
     },
     {
       "sequence": 54,
@@ -1078,9 +972,7 @@
         "card-5.png"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 6,
-      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+      "status": "ready"
     },
     {
       "sequence": 55,
@@ -1098,9 +990,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 6,
-      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+      "status": "ready"
     },
     {
       "sequence": 56,
@@ -1118,9 +1008,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 6,
-      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+      "status": "ready"
     },
     {
       "sequence": 57,
@@ -1138,9 +1026,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 6,
-      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+      "status": "ready"
     },
     {
       "sequence": 58,
@@ -1158,9 +1044,7 @@
         "card-5.jpg"
       ],
       "known_gap": null,
-      "status": "ready",
-      "week": 6,
-      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+      "status": "ready"
     },
     {
       "sequence": 59,
@@ -1182,9 +1066,7 @@
         "card-4.jpg",
         "card-5.jpg"
       ],
-      "status": "needs_adaptation",
-      "week": 7,
-      "week_label": "Week 7（延伸／可選，僅此一組）"
+      "status": "needs_adaptation"
     }
   ]
 }
