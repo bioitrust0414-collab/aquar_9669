@@ -1,0 +1,30 @@
+name: Publish to Social Media
+
+on:
+  push:
+    paths:
+      - 'ig-posts/pending/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Read pending posts
+        run: |
+          # 掃描 pending 資料夾
+          # 讀取圖片 + caption.txt
+          # 透過 Buffer API 發布
+          
+      - name: Publish to Buffer
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_API_TOKEN }}
+        run: |
+          # 呼叫 Buffer API
+          # 發布到 Facebook & Instagram
+          
+      - name: Move to published
+        run: |
+          # 移動至 published 資料夾
+          # 更新 git 記錄
