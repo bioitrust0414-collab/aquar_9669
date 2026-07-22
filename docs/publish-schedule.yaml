@@ -5,20 +5,20 @@ plan:
   source_file: docs/publish-schedule-v2.json
   source_commit: 4e7104b690534c1909b9cb4db1b4ad976196472c
   timezone: Asia/Taipei
-  mode: order_only
+  mode: sequence_only
   publishing_enabled: false
   review_required: true
   timing:
     cadence: null
     start_at: null
   order_basis:
-  - Week 1：破題喚醒
-  - Week 2：痛點共感
-  - Week 3：科學論證
-  - Week 4：品牌差異化
-  - Week 5：生活整合
-  - Week 6：長期陪伴收尾
-  - Week 7：延伸素材，預設不發布
+  - 破題喚醒
+  - 痛點共感
+  - 科學論證
+  - 品牌差異化
+  - 生活整合
+  - 長期陪伴收尾
+  - 延伸素材，預設不發布
 delivery:
   strategy: undecided
   primary_channel: null
@@ -28,14 +28,6 @@ counts:
   core: 58
   bonus: 1
   total: 59
-  by_week:
-    1: 11
-    2: 6
-    3: 12
-    4: 11
-    5: 12
-    6: 6
-    7: 1
   by_status:
     ready_with_accepted_gap: 2
     ready: 56
@@ -43,8 +35,6 @@ counts:
 items:
 - id: aquar-001
   sequence: 1
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: B
   theme: 微生態防禦動力學
   content_path: content/topic-01-microbiome-dynamics
@@ -66,8 +56,6 @@ items:
   known_gap: 缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾
 - id: aquar-002
   sequence: 2
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: 微生態防禦動力學
   content_path: content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria
@@ -90,8 +78,6 @@ items:
     buffer_mode: null
 - id: aquar-003
   sequence: 3
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: 微生態防禦動力學
   content_path: content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth
@@ -114,8 +100,6 @@ items:
     buffer_mode: null
 - id: aquar-004
   sequence: 4
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: 微生態防禦動力學
   content_path: content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation
@@ -138,8 +122,6 @@ items:
     buffer_mode: null
 - id: aquar-005
   sequence: 5
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: 微生態防禦動力學
   content_path: content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits
@@ -162,8 +144,6 @@ items:
     buffer_mode: null
 - id: aquar-006
   sequence: 6
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: B
   theme: pH 值的生存邊界
   content_path: content/topic-02-ph-boundary
@@ -185,8 +165,6 @@ items:
     buffer_mode: null
 - id: aquar-007
   sequence: 7
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: pH 值的生存邊界
   content_path: content/topic-02-ph-boundary/kepu-2.1-what-is-ph
@@ -209,8 +187,6 @@ items:
     buffer_mode: null
 - id: aquar-008
   sequence: 8
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: pH 值的生存邊界
   content_path: content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45
@@ -233,8 +209,6 @@ items:
     buffer_mode: null
 - id: aquar-009
   sequence: 9
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: pH 值的生存邊界
   content_path: content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance
@@ -257,8 +231,6 @@ items:
     buffer_mode: null
 - id: aquar-010
   sequence: 10
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: pH 值的生存邊界
   content_path: content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice
@@ -281,8 +253,6 @@ items:
     buffer_mode: null
 - id: aquar-011
   sequence: 11
-  week: 1
-  week_label: Week 1 - 破題喚醒（迷思＋數據鉤子）
   system: Kepu
   theme: pH 值的生存邊界
   content_path: content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries
@@ -305,8 +275,6 @@ items:
     buffer_mode: null
 - id: aquar-012
   sequence: 12
-  week: 2
-  week_label: Week 2 - 痛點共感（惡性循環）
   system: B
   theme: 屏障修復的負回饋循環
   content_path: content/topic-06-barrier-repair
@@ -328,8 +296,6 @@ items:
   known_gap: 缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾
 - id: aquar-013
   sequence: 13
-  week: 2
-  week_label: Week 2 - 痛點共感（惡性循環）
   system: Kepu
   theme: 屏障修復的負回饋循環
   content_path: content/topic-06-barrier-repair/kepu-6.1-barrier
@@ -352,8 +318,6 @@ items:
     buffer_mode: null
 - id: aquar-014
   sequence: 14
-  week: 2
-  week_label: Week 2 - 痛點共感（惡性循環）
   system: Kepu
   theme: 屏障修復的負回饋循環
   content_path: content/topic-06-barrier-repair/kepu-6.2-less-is-more
@@ -376,8 +340,6 @@ items:
     buffer_mode: null
 - id: aquar-015
   sequence: 15
-  week: 2
-  week_label: Week 2 - 痛點共感（惡性循環）
   system: Kepu
   theme: 屏障修復的負回饋循環
   content_path: content/topic-06-barrier-repair/kepu-6.3-let-body-speak
@@ -400,8 +362,6 @@ items:
     buffer_mode: null
 - id: aquar-016
   sequence: 16
-  week: 2
-  week_label: Week 2 - 痛點共感（惡性循環）
   system: Kepu
   theme: 屏障修復的負回饋循環
   content_path: content/topic-06-barrier-repair/kepu-6.4-self-healing
@@ -424,8 +384,6 @@ items:
     buffer_mode: null
 - id: aquar-017
   sequence: 17
-  week: 2
-  week_label: Week 2 - 痛點共感（惡性循環）
   system: Kepu
   theme: 屏障修復的負回饋循環
   content_path: content/topic-06-barrier-repair/kepu-6.5-patience-in-repair
@@ -448,8 +406,6 @@ items:
     buffer_mode: null
 - id: aquar-018
   sequence: 18
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: B
   theme: 分子滲透與吸收效率
   content_path: content/topic-03-molecular-permeation
@@ -471,8 +427,6 @@ items:
     buffer_mode: null
 - id: aquar-019
   sequence: 19
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 分子滲透與吸收效率
   content_path: content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size
@@ -495,8 +449,6 @@ items:
     buffer_mode: null
 - id: aquar-020
   sequence: 20
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 分子滲透與吸收效率
   content_path: content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration
@@ -519,8 +471,6 @@ items:
     buffer_mode: null
 - id: aquar-021
   sequence: 21
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 分子滲透與吸收效率
   content_path: content/topic-03-molecular-permeation/kepu-3.3-absorption
@@ -543,8 +493,6 @@ items:
     buffer_mode: null
 - id: aquar-022
   sequence: 22
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 分子滲透與吸收效率
   content_path: content/topic-03-molecular-permeation/kepu-3.4-personalized-formula
@@ -567,8 +515,6 @@ items:
     buffer_mode: null
 - id: aquar-023
   sequence: 23
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 分子滲透與吸收效率
   content_path: content/topic-03-molecular-permeation/kepu-3.5-future-trend
@@ -596,8 +542,6 @@ items:
     buffer_mode: null
 - id: aquar-024
   sequence: 24
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: B
   theme: 成分潔癖的科學依據
   content_path: content/topic-05-ingredient-purity
@@ -619,8 +563,6 @@ items:
     buffer_mode: null
 - id: aquar-025
   sequence: 25
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 成分潔癖的科學依據
   content_path: content/topic-05-ingredient-purity/kepu-5.1-label-reading
@@ -643,8 +585,6 @@ items:
     buffer_mode: null
 - id: aquar-026
   sequence: 26
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 成分潔癖的科學依據
   content_path: content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend
@@ -667,8 +607,6 @@ items:
     buffer_mode: null
 - id: aquar-027
   sequence: 27
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 成分潔癖的科學依據
   content_path: content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid
@@ -691,8 +629,6 @@ items:
     buffer_mode: null
 - id: aquar-028
   sequence: 28
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 成分潔癖的科學依據
   content_path: content/topic-05-ingredient-purity/kepu-5.4-smart-consumer
@@ -715,8 +651,6 @@ items:
     buffer_mode: null
 - id: aquar-029
   sequence: 29
-  week: 3
-  week_label: Week 3 - 科學論證（分子與成分）
   system: Kepu
   theme: 成分潔癖的科學依據
   content_path: content/topic-05-ingredient-purity/kepu-5.5-discipline
@@ -739,8 +673,6 @@ items:
     buffer_mode: null
 - id: aquar-030
   sequence: 30
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: B
   theme: 數據與感性的交界
   content_path: content/topic-08-data-vs-emotion
@@ -762,8 +694,6 @@ items:
     buffer_mode: null
 - id: aquar-031
   sequence: 31
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 數據與感性的交界
   content_path: content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data
@@ -786,8 +716,6 @@ items:
     buffer_mode: null
 - id: aquar-032
   sequence: 32
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 數據與感性的交界
   content_path: content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data
@@ -810,8 +738,6 @@ items:
     buffer_mode: null
 - id: aquar-033
   sequence: 33
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 數據與感性的交界
   content_path: content/topic-08-data-vs-emotion/kepu-8.3-gentle-science
@@ -834,8 +760,6 @@ items:
     buffer_mode: null
 - id: aquar-034
   sequence: 34
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 數據與感性的交界
   content_path: content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool
@@ -858,8 +782,6 @@ items:
     buffer_mode: null
 - id: aquar-035
   sequence: 35
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 數據與感性的交界
   content_path: content/topic-08-data-vs-emotion/kepu-8.5-transparency
@@ -882,8 +804,6 @@ items:
     buffer_mode: null
 - id: aquar-036
   sequence: 36
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: B
   theme: 挑剔肌膚的權利
   content_path: content/topic-09-selective-rights
@@ -905,8 +825,6 @@ items:
     buffer_mode: null
 - id: aquar-037
   sequence: 37
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 挑剔肌膚的權利
   content_path: content/topic-09-selective-rights/kepu-9.1-quality-life
@@ -929,8 +847,6 @@ items:
     buffer_mode: null
 - id: aquar-038
   sequence: 38
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 挑剔肌膚的權利
   content_path: content/topic-09-selective-rights/kepu-9.2-market-reality
@@ -953,8 +869,6 @@ items:
     buffer_mode: null
 - id: aquar-039
   sequence: 39
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 挑剔肌膚的權利
   content_path: content/topic-09-selective-rights/kepu-9.3-autonomy
@@ -977,8 +891,6 @@ items:
     buffer_mode: null
 - id: aquar-040
   sequence: 40
-  week: 4
-  week_label: Week 4 - 品牌差異化（哲學與受眾認同）
   system: Kepu
   theme: 挑剔肌膚的權利
   content_path: content/topic-09-selective-rights/kepu-9.4-freedom-to-choose
@@ -1001,8 +913,6 @@ items:
     buffer_mode: null
 - id: aquar-041
   sequence: 41
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: B
   theme: 環境平衡與生活儀式
   content_path: content/topic-04-daily-ritual
@@ -1024,8 +934,6 @@ items:
     buffer_mode: null
 - id: aquar-042
   sequence: 42
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 環境平衡與生活儀式
   content_path: content/topic-04-daily-ritual/kepu-4.1-me-time-value
@@ -1048,8 +956,6 @@ items:
     buffer_mode: null
 - id: aquar-043
   sequence: 43
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 環境平衡與生活儀式
   content_path: content/topic-04-daily-ritual/kepu-4.2-ritual-sense
@@ -1072,8 +978,6 @@ items:
     buffer_mode: null
 - id: aquar-044
   sequence: 44
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 環境平衡與生活儀式
   content_path: content/topic-04-daily-ritual/kepu-4.3-self-love-practice
@@ -1096,8 +1000,6 @@ items:
     buffer_mode: null
 - id: aquar-045
   sequence: 45
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 環境平衡與生活儀式
   content_path: content/topic-04-daily-ritual/kepu-4.4-sensory-healing
@@ -1120,8 +1022,6 @@ items:
     buffer_mode: null
 - id: aquar-046
   sequence: 46
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 環境平衡與生活儀式
   content_path: content/topic-04-daily-ritual/kepu-4.5-body-connection
@@ -1144,8 +1044,6 @@ items:
     buffer_mode: null
 - id: aquar-047
   sequence: 47
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: B
   theme: 微氣候對人體的影響
   content_path: content/topic-07-microclimate
@@ -1167,8 +1065,6 @@ items:
     buffer_mode: null
 - id: aquar-048
   sequence: 48
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 微氣候對人體的影響
   content_path: content/topic-07-microclimate/kepu-7.1-concept
@@ -1191,8 +1087,6 @@ items:
     buffer_mode: null
 - id: aquar-049
   sequence: 49
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 微氣候對人體的影響
   content_path: content/topic-07-microclimate/kepu-7.2-taiwan-humidity
@@ -1215,8 +1109,6 @@ items:
     buffer_mode: null
 - id: aquar-050
   sequence: 50
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 微氣候對人體的影響
   content_path: content/topic-07-microclimate/kepu-7.3-smart-microclimate-management
@@ -1239,8 +1131,6 @@ items:
     buffer_mode: null
 - id: aquar-051
   sequence: 51
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 微氣候對人體的影響
   content_path: content/topic-07-microclimate/kepu-7.4-freshness-philosophy
@@ -1263,8 +1153,6 @@ items:
     buffer_mode: null
 - id: aquar-052
   sequence: 52
-  week: 5
-  week_label: Week 5 - 生活整合（儀式與季節）
   system: Kepu
   theme: 微氣候對人體的影響
   content_path: content/topic-07-microclimate/kepu-7.5-body-sovereignty
@@ -1287,8 +1175,6 @@ items:
     buffer_mode: null
 - id: aquar-053
   sequence: 53
-  week: 6
-  week_label: Week 6 - 長期陪伴收尾（修復到維持）
   system: B
   theme: 從「修復」到「維持」
   content_path: content/topic-10-repair-to-maintain
@@ -1310,8 +1196,6 @@ items:
     buffer_mode: null
 - id: aquar-054
   sequence: 54
-  week: 6
-  week_label: Week 6 - 長期陪伴收尾（修復到維持）
   system: Kepu
   theme: 從「修復」到「維持」
   content_path: content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment
@@ -1334,8 +1218,6 @@ items:
     buffer_mode: null
 - id: aquar-055
   sequence: 55
-  week: 6
-  week_label: Week 6 - 長期陪伴收尾（修復到維持）
   system: Kepu
   theme: 從「修復」到「維持」
   content_path: content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal
@@ -1358,8 +1240,6 @@ items:
     buffer_mode: null
 - id: aquar-056
   sequence: 56
-  week: 6
-  week_label: Week 6 - 長期陪伴收尾（修復到維持）
   system: Kepu
   theme: 從「修復」到「維持」
   content_path: content/topic-10-repair-to-maintain/kepu-10.3-wise-choice
@@ -1382,8 +1262,6 @@ items:
     buffer_mode: null
 - id: aquar-057
   sequence: 57
-  week: 6
-  week_label: Week 6 - 長期陪伴收尾（修復到維持）
   system: Kepu
   theme: 從「修復」到「維持」
   content_path: content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before
@@ -1406,8 +1284,6 @@ items:
     buffer_mode: null
 - id: aquar-058
   sequence: 58
-  week: 6
-  week_label: Week 6 - 長期陪伴收尾（修復到維持）
   system: Kepu
   theme: 從「修復」到「維持」
   content_path: content/topic-10-repair-to-maintain/kepu-10.5-commitment
@@ -1430,8 +1306,6 @@ items:
     buffer_mode: null
 - id: aquar-059
   sequence: 59
-  week: 7
-  week_label: Week 7（延伸／可選，僅此一組）
   system: Bonus-Reuse
   theme: 身體的資產：妳最珍貴的投資（唯一確認未使用的延伸素材）
   content_path: archive/topic10-unused-concept-draft/investment-mockup-a
