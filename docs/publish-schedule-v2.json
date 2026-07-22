@@ -1,0 +1,1308 @@
+{
+  "repo": "github.com/bioitrust0414-collab/aquar_9669",
+  "brand": "私密保養品牌 Aquar",
+  "generated_note": "v2 replan: reordered by marketing-funnel logic (hook -> pain -> proof -> differentiation -> lifestyle -> retention) instead of numeric topic order; added optional Week 7 bonus wave repurposing the 6 archived concept-draft image sets (35 images) so no produced material goes unused. Bonus items require Chinese copy + light brand-tone adaptation before publishing and are recommended for Stories/community channel rather than main feed, given their different visual style.",
+  "total_pieces_core": 58,
+  "total_pieces_bonus": 6,
+  "total_pieces": 64,
+  "core_fully_ready": 56,
+  "core_ready_with_accepted_gap": 2,
+  "bonus_needs_adaptation": 6,
+  "schedule": [
+    {
+      "sequence": 1,
+      "system": "B",
+      "topic_folder": "topic-01-microbiome-dynamics",
+      "theme_cn": "微生態防禦動力學",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg"
+      ],
+      "known_gap": "缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾",
+      "status": "ready_with_accepted_gap",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 2,
+      "system": "Kepu",
+      "topic_folder": "topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria",
+      "theme_cn": "微生態防禦動力學",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 3,
+      "system": "Kepu",
+      "topic_folder": "topic-01-microbiome-dynamics/kepu-1.2-sterile-myth",
+      "theme_cn": "微生態防禦動力學",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 4,
+      "system": "Kepu",
+      "topic_folder": "topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation",
+      "theme_cn": "微生態防禦動力學",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 5,
+      "system": "Kepu",
+      "topic_folder": "topic-01-microbiome-dynamics/kepu-1.4-daily-habits",
+      "theme_cn": "微生態防禦動力學",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 6,
+      "system": "B",
+      "topic_folder": "topic-02-ph-boundary",
+      "theme_cn": "pH 值的生存邊界",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 7,
+      "system": "Kepu",
+      "topic_folder": "topic-02-ph-boundary/kepu-2.1-what-is-ph",
+      "theme_cn": "pH 值的生存邊界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 8,
+      "system": "Kepu",
+      "topic_folder": "topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45",
+      "theme_cn": "pH 值的生存邊界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 9,
+      "system": "Kepu",
+      "topic_folder": "topic-02-ph-boundary/kepu-2.3-recognizing-imbalance",
+      "theme_cn": "pH 值的生存邊界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 10,
+      "system": "Kepu",
+      "topic_folder": "topic-02-ph-boundary/kepu-2.4-gentle-product-choice",
+      "theme_cn": "pH 值的生存邊界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 11,
+      "system": "Kepu",
+      "topic_folder": "topic-02-ph-boundary/kepu-2.5-guarding-boundaries",
+      "theme_cn": "pH 值的生存邊界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 1,
+      "week_label": "Week 1 - 破題喚醒（迷思＋數據鉤子）"
+    },
+    {
+      "sequence": 12,
+      "system": "B",
+      "topic_folder": "topic-06-barrier-repair",
+      "theme_cn": "屏障修復的負回饋循環",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg"
+      ],
+      "known_gap": "缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾",
+      "status": "ready_with_accepted_gap",
+      "week": 2,
+      "week_label": "Week 2 - 痛點共感（惡性循環）"
+    },
+    {
+      "sequence": 13,
+      "system": "Kepu",
+      "topic_folder": "topic-06-barrier-repair/kepu-6.1-barrier",
+      "theme_cn": "屏障修復的負回饋循環",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 2,
+      "week_label": "Week 2 - 痛點共感（惡性循環）"
+    },
+    {
+      "sequence": 14,
+      "system": "Kepu",
+      "topic_folder": "topic-06-barrier-repair/kepu-6.2-less-is-more",
+      "theme_cn": "屏障修復的負回饋循環",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 2,
+      "week_label": "Week 2 - 痛點共感（惡性循環）"
+    },
+    {
+      "sequence": 15,
+      "system": "Kepu",
+      "topic_folder": "topic-06-barrier-repair/kepu-6.3-let-body-speak",
+      "theme_cn": "屏障修復的負回饋循環",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 2,
+      "week_label": "Week 2 - 痛點共感（惡性循環）"
+    },
+    {
+      "sequence": 16,
+      "system": "Kepu",
+      "topic_folder": "topic-06-barrier-repair/kepu-6.4-self-healing",
+      "theme_cn": "屏障修復的負回饋循環",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 2,
+      "week_label": "Week 2 - 痛點共感（惡性循環）"
+    },
+    {
+      "sequence": 17,
+      "system": "Kepu",
+      "topic_folder": "topic-06-barrier-repair/kepu-6.5-patience-in-repair",
+      "theme_cn": "屏障修復的負回饋循環",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 2,
+      "week_label": "Week 2 - 痛點共感（惡性循環）"
+    },
+    {
+      "sequence": 18,
+      "system": "B",
+      "topic_folder": "topic-03-molecular-permeation",
+      "theme_cn": "分子滲透與吸收效率",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 19,
+      "system": "Kepu",
+      "topic_folder": "topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size",
+      "theme_cn": "分子滲透與吸收效率",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 20,
+      "system": "Kepu",
+      "topic_folder": "topic-03-molecular-permeation/kepu-3.2-art-of-penetration",
+      "theme_cn": "分子滲透與吸收效率",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 21,
+      "system": "Kepu",
+      "topic_folder": "topic-03-molecular-permeation/kepu-3.3-absorption",
+      "theme_cn": "分子滲透與吸收效率",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 22,
+      "system": "Kepu",
+      "topic_folder": "topic-03-molecular-permeation/kepu-3.4-personalized-formula",
+      "theme_cn": "分子滲透與吸收效率",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 23,
+      "system": "Kepu",
+      "topic_folder": "topic-03-molecular-permeation/kepu-3.5-future-trend",
+      "theme_cn": "分子滲透與吸收效率",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1-alt.jpg",
+        "card-1.jpg",
+        "card-2-alt.jpg",
+        "card-2.jpg",
+        "card-3-alt.jpg",
+        "card-3.jpg",
+        "card-4-alt.jpg",
+        "card-4.jpg",
+        "card-5-alt.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 24,
+      "system": "B",
+      "topic_folder": "topic-05-ingredient-purity",
+      "theme_cn": "成分潔癖的科學依據",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 25,
+      "system": "Kepu",
+      "topic_folder": "topic-05-ingredient-purity/kepu-5.1-label-reading",
+      "theme_cn": "成分潔癖的科學依據",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 26,
+      "system": "Kepu",
+      "topic_folder": "topic-05-ingredient-purity/kepu-5.2-minimalist-trend",
+      "theme_cn": "成分潔癖的科學依據",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 27,
+      "system": "Kepu",
+      "topic_folder": "topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid",
+      "theme_cn": "成分潔癖的科學依據",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 28,
+      "system": "Kepu",
+      "topic_folder": "topic-05-ingredient-purity/kepu-5.4-smart-consumer",
+      "theme_cn": "成分潔癖的科學依據",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 29,
+      "system": "Kepu",
+      "topic_folder": "topic-05-ingredient-purity/kepu-5.5-discipline",
+      "theme_cn": "成分潔癖的科學依據",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 3,
+      "week_label": "Week 3 - 科學論證（分子與成分）"
+    },
+    {
+      "sequence": 30,
+      "system": "B",
+      "topic_folder": "topic-08-data-vs-emotion",
+      "theme_cn": "數據與感性的交界",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 31,
+      "system": "Kepu",
+      "topic_folder": "topic-08-data-vs-emotion/kepu-8.1-meaning-of-data",
+      "theme_cn": "數據與感性的交界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 32,
+      "system": "Kepu",
+      "topic_folder": "topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data",
+      "theme_cn": "數據與感性的交界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 33,
+      "system": "Kepu",
+      "topic_folder": "topic-08-data-vs-emotion/kepu-8.3-gentle-science",
+      "theme_cn": "數據與感性的交界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 34,
+      "system": "Kepu",
+      "topic_folder": "topic-08-data-vs-emotion/kepu-8.4-data-as-tool",
+      "theme_cn": "數據與感性的交界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 35,
+      "system": "Kepu",
+      "topic_folder": "topic-08-data-vs-emotion/kepu-8.5-transparency",
+      "theme_cn": "數據與感性的交界",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 36,
+      "system": "B",
+      "topic_folder": "topic-09-selective-rights",
+      "theme_cn": "挑剔肌膚的權利",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 37,
+      "system": "Kepu",
+      "topic_folder": "topic-09-selective-rights/kepu-9.1-quality-life",
+      "theme_cn": "挑剔肌膚的權利",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 38,
+      "system": "Kepu",
+      "topic_folder": "topic-09-selective-rights/kepu-9.2-market-reality",
+      "theme_cn": "挑剔肌膚的權利",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 39,
+      "system": "Kepu",
+      "topic_folder": "topic-09-selective-rights/kepu-9.3-autonomy",
+      "theme_cn": "挑剔肌膚的權利",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 40,
+      "system": "Kepu",
+      "topic_folder": "topic-09-selective-rights/kepu-9.4-freedom-to-choose",
+      "theme_cn": "挑剔肌膚的權利",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 4,
+      "week_label": "Week 4 - 品牌差異化（哲學與受眾認同）"
+    },
+    {
+      "sequence": 41,
+      "system": "B",
+      "topic_folder": "topic-04-daily-ritual",
+      "theme_cn": "環境平衡與生活儀式",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 42,
+      "system": "Kepu",
+      "topic_folder": "topic-04-daily-ritual/kepu-4.1-me-time-value",
+      "theme_cn": "環境平衡與生活儀式",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 43,
+      "system": "Kepu",
+      "topic_folder": "topic-04-daily-ritual/kepu-4.2-ritual-sense",
+      "theme_cn": "環境平衡與生活儀式",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 44,
+      "system": "Kepu",
+      "topic_folder": "topic-04-daily-ritual/kepu-4.3-self-love-practice",
+      "theme_cn": "環境平衡與生活儀式",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 45,
+      "system": "Kepu",
+      "topic_folder": "topic-04-daily-ritual/kepu-4.4-sensory-healing",
+      "theme_cn": "環境平衡與生活儀式",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 46,
+      "system": "Kepu",
+      "topic_folder": "topic-04-daily-ritual/kepu-4.5-body-connection",
+      "theme_cn": "環境平衡與生活儀式",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 47,
+      "system": "B",
+      "topic_folder": "topic-07-microclimate",
+      "theme_cn": "微氣候對人體的影響",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 48,
+      "system": "Kepu",
+      "topic_folder": "topic-07-microclimate/kepu-7.1-concept",
+      "theme_cn": "微氣候對人體的影響",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 49,
+      "system": "Kepu",
+      "topic_folder": "topic-07-microclimate/kepu-7.2-taiwan-humidity",
+      "theme_cn": "微氣候對人體的影響",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 50,
+      "system": "Kepu",
+      "topic_folder": "topic-07-microclimate/kepu-7.3-smart-microclimate-management",
+      "theme_cn": "微氣候對人體的影響",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 51,
+      "system": "Kepu",
+      "topic_folder": "topic-07-microclimate/kepu-7.4-freshness-philosophy",
+      "theme_cn": "微氣候對人體的影響",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 52,
+      "system": "Kepu",
+      "topic_folder": "topic-07-microclimate/kepu-7.5-body-sovereignty",
+      "theme_cn": "微氣候對人體的影響",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 5,
+      "week_label": "Week 5 - 生活整合（儀式與季節）"
+    },
+    {
+      "sequence": 53,
+      "system": "B",
+      "topic_folder": "topic-10-repair-to-maintain",
+      "theme_cn": "從「修復」到「維持」",
+      "format": "IG carousel + FB long-form",
+      "tone": "生理主權／哲學科學混合語氣",
+      "copy_ready": true,
+      "images_present": [
+        "hook.jpg",
+        "transition.jpg",
+        "data.jpg",
+        "cta.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 6,
+      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+    },
+    {
+      "sequence": 54,
+      "system": "Kepu",
+      "topic_folder": "topic-10-repair-to-maintain/kepu-10.1-long-term-investment",
+      "theme_cn": "從「修復」到「維持」",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.png",
+        "card-2.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 6,
+      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+    },
+    {
+      "sequence": 55,
+      "system": "Kepu",
+      "topic_folder": "topic-10-repair-to-maintain/kepu-10.2-brave-refusal",
+      "theme_cn": "從「修復」到「維持」",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 6,
+      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+    },
+    {
+      "sequence": 56,
+      "system": "Kepu",
+      "topic_folder": "topic-10-repair-to-maintain/kepu-10.3-wise-choice",
+      "theme_cn": "從「修復」到「維持」",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 6,
+      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+    },
+    {
+      "sequence": 57,
+      "system": "Kepu",
+      "topic_folder": "topic-10-repair-to-maintain/kepu-10.4-ease-as-before",
+      "theme_cn": "從「修復」到「維持」",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 6,
+      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+    },
+    {
+      "sequence": 58,
+      "system": "Kepu",
+      "topic_folder": "topic-10-repair-to-maintain/kepu-10.5-commitment",
+      "theme_cn": "從「修復」到「維持」",
+      "format": "衛教科普版：FB長文 + IG圖卡",
+      "tone": "口語化衛教，去術語",
+      "copy_ready": true,
+      "images_present": [
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "known_gap": null,
+      "status": "ready",
+      "week": 6,
+      "week_label": "Week 6 - 長期陪伴收尾（修復到維持）"
+    },
+    {
+      "sequence": 59,
+      "system": "Bonus-Reuse",
+      "topic_folder": "archive/topic10-concept-drafts-english-mockup/investment-mockup-a",
+      "theme_cn": "身體的資產：妳最珍貴的投資（延伸系列）",
+      "format": "單圖 IG Story / 會員社群貼文（非主 Feed）",
+      "tone": "溫暖生活風，作為 Topic 10 的情感延伸，非數據論證",
+      "copy_ready": false,
+      "needs_adaptation": [
+        "英文文案需翻譯並改寫成品牌語氣",
+        "視覺風格（暖色生活攝影）與實驗室風不同，建議加上品牌色調濾鏡或僅用於 Story/會員限定通路，不上主 Feed"
+      ],
+      "images_present": [
+        "cover.jpg",
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "status": "needs_adaptation",
+      "week": 7,
+      "week_label": "Week 7（延伸／可選）- 長期主義加碼系列，重新利用先前草稿素材"
+    },
+    {
+      "sequence": 60,
+      "system": "Bonus-Reuse",
+      "topic_folder": "archive/topic10-concept-drafts-english-mockup/investment-mockup-b",
+      "theme_cn": "保養的深層意義：暫時療程還是長期投資？",
+      "format": "單圖 IG Story / 會員社群貼文",
+      "tone": "同上",
+      "copy_ready": false,
+      "needs_adaptation": [
+        "英文文案需翻譯並改寫",
+        "插畫風格（水彩／手繪）與品牌實驗室風不同，建議標示為「品牌理念」限定用途"
+      ],
+      "images_present": [
+        "cover.png",
+        "card-1.png",
+        "card-3.png",
+        "card-4.png",
+        "card-5.png"
+      ],
+      "status": "needs_adaptation",
+      "week": 7,
+      "week_label": "Week 7（延伸／可選）"
+    },
+    {
+      "sequence": 61,
+      "system": "Bonus-Reuse",
+      "topic_folder": "archive/topic10-concept-drafts-english-mockup/long-term-stability",
+      "theme_cn": "身體的承諾：長期穩定的重要性",
+      "format": "單圖 IG Story / 會員社群貼文",
+      "tone": "同上",
+      "copy_ready": false,
+      "needs_adaptation": [
+        "英文文案需翻譯並改寫",
+        "真人生活攝影風格，建議用於品牌故事／創辦人理念相關貼文，而非科學論證類主題"
+      ],
+      "images_present": [
+        "cover.jpg",
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "status": "needs_adaptation",
+      "week": 7,
+      "week_label": "Week 7（延伸／可選）"
+    },
+    {
+      "sequence": 62,
+      "system": "Bonus-Reuse",
+      "topic_folder": "archive/topic10-concept-drafts-english-mockup/long-termism",
+      "theme_cn": "長期主義：身體健康與平衡需要時間",
+      "format": "單圖 IG Story / 會員社群貼文",
+      "tone": "同上",
+      "copy_ready": false,
+      "needs_adaptation": [
+        "英文文案需翻譯並改寫"
+      ],
+      "images_present": [
+        "cover.jpg",
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "status": "needs_adaptation",
+      "week": 7,
+      "week_label": "Week 7（延伸／可選）"
+    },
+    {
+      "sequence": 63,
+      "system": "Bonus-Reuse",
+      "topic_folder": "archive/topic10-concept-drafts-english-mockup/wise-choices",
+      "theme_cn": "明智選擇：保養哲學與人生階段（呼應 kepu-10.3 挑剔智慧）",
+      "format": "單圖 IG Story / 會員社群貼文",
+      "tone": "同上",
+      "copy_ready": false,
+      "needs_adaptation": [
+        "英文文案需翻譯並改寫",
+        "可作為 kepu-10.3-wise-choice 正式發布後的呼應／花絮素材"
+      ],
+      "images_present": [
+        "cover.jpg",
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "status": "needs_adaptation",
+      "week": 7,
+      "week_label": "Week 7（延伸／可選）"
+    },
+    {
+      "sequence": 64,
+      "system": "Bonus-Reuse",
+      "topic_folder": "archive/topic10-concept-drafts-english-mockup/effortless-as-ever",
+      "theme_cn": "一如既往的從容：身體健康之旅沒有終點（呼應 kepu-10.4 一如既往）",
+      "format": "單圖 IG Story / 會員社群貼文",
+      "tone": "同上",
+      "copy_ready": false,
+      "needs_adaptation": [
+        "英文文案需翻譯並改寫",
+        "可作為 kepu-10.4-ease-as-before 正式發布後的呼應／花絮素材"
+      ],
+      "images_present": [
+        "cover.jpg",
+        "card-1.jpg",
+        "card-2.jpg",
+        "card-3.jpg",
+        "card-4.jpg",
+        "card-5.jpg"
+      ],
+      "status": "needs_adaptation",
+      "week": 7,
+      "week_label": "Week 7（延伸／可選）"
+    }
+  ]
+}
