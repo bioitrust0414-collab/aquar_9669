@@ -1,13 +1,13 @@
 {
   "repo": "github.com/bioitrust0414-collab/aquar_9669",
   "brand": "私密保養品牌 Aquar",
-  "generated_note": "v2 replan: reordered by marketing-funnel logic (hook -> pain -> proof -> differentiation -> lifestyle -> retention) instead of numeric topic order; added optional Week 7 bonus wave repurposing the 6 archived concept-draft image sets (35 images) so no produced material goes unused. Bonus items require Chinese copy + light brand-tone adaptation before publishing and are recommended for Stories/community channel rather than main feed, given their different visual style.",
+  "generated_note": "v2.1 correction: earlier v2 mistakenly treated 5 of the 6 archived \"_needs-manual-match\" image sets as unused alternate-style drafts. A full md5 duplicate check found those 5 sets (investment-mockup-b, long-term-stability, long-termism, wise-choices, effortless-as-ever) are byte-identical duplicates of images already live in kepu-10.1~10.5 - they were never spare material, just redundant copies, and have been deleted from archive/. Only investment-mockup-a (renamed folder: archive/topic10-unused-concept-draft) was confirmed genuinely unique and unused; it remains as the sole Week 7 bonus item. Core 58-piece order (Week 1-6, funnel logic) is unchanged.",
   "total_pieces_core": 58,
-  "total_pieces_bonus": 6,
-  "total_pieces": 64,
+  "total_pieces_bonus": 1,
+  "total_pieces": 59,
   "core_fully_ready": 56,
   "core_ready_with_accepted_gap": 2,
-  "bonus_needs_adaptation": 6,
+  "bonus_needs_adaptation": 1,
   "schedule": [
     {
       "sequence": 1,
@@ -1165,14 +1165,14 @@
     {
       "sequence": 59,
       "system": "Bonus-Reuse",
-      "topic_folder": "archive/topic10-concept-drafts-english-mockup/investment-mockup-a",
-      "theme_cn": "身體的資產：妳最珍貴的投資（延伸系列）",
+      "topic_folder": "archive/topic10-unused-concept-draft/investment-mockup-a",
+      "theme_cn": "身體的資產：妳最珍貴的投資（唯一確認未使用的延伸素材）",
       "format": "單圖 IG Story / 會員社群貼文（非主 Feed）",
       "tone": "溫暖生活風，作為 Topic 10 的情感延伸，非數據論證",
       "copy_ready": false,
       "needs_adaptation": [
         "英文文案需翻譯並改寫成品牌語氣",
-        "視覺風格（暖色生活攝影）與實驗室風不同，建議加上品牌色調濾鏡或僅用於 Story/會員限定通路，不上主 Feed"
+        "視覺風格（暖色生活攝影＋Instagram 介面模擬）與實驗室風不同，建議僅用於 Story/會員限定通路"
       ],
       "images_present": [
         "cover.jpg",
@@ -1184,125 +1184,7 @@
       ],
       "status": "needs_adaptation",
       "week": 7,
-      "week_label": "Week 7（延伸／可選）- 長期主義加碼系列，重新利用先前草稿素材"
-    },
-    {
-      "sequence": 60,
-      "system": "Bonus-Reuse",
-      "topic_folder": "archive/topic10-concept-drafts-english-mockup/investment-mockup-b",
-      "theme_cn": "保養的深層意義：暫時療程還是長期投資？",
-      "format": "單圖 IG Story / 會員社群貼文",
-      "tone": "同上",
-      "copy_ready": false,
-      "needs_adaptation": [
-        "英文文案需翻譯並改寫",
-        "插畫風格（水彩／手繪）與品牌實驗室風不同，建議標示為「品牌理念」限定用途"
-      ],
-      "images_present": [
-        "cover.png",
-        "card-1.png",
-        "card-3.png",
-        "card-4.png",
-        "card-5.png"
-      ],
-      "status": "needs_adaptation",
-      "week": 7,
-      "week_label": "Week 7（延伸／可選）"
-    },
-    {
-      "sequence": 61,
-      "system": "Bonus-Reuse",
-      "topic_folder": "archive/topic10-concept-drafts-english-mockup/long-term-stability",
-      "theme_cn": "身體的承諾：長期穩定的重要性",
-      "format": "單圖 IG Story / 會員社群貼文",
-      "tone": "同上",
-      "copy_ready": false,
-      "needs_adaptation": [
-        "英文文案需翻譯並改寫",
-        "真人生活攝影風格，建議用於品牌故事／創辦人理念相關貼文，而非科學論證類主題"
-      ],
-      "images_present": [
-        "cover.jpg",
-        "card-1.jpg",
-        "card-2.jpg",
-        "card-3.jpg",
-        "card-4.jpg",
-        "card-5.jpg"
-      ],
-      "status": "needs_adaptation",
-      "week": 7,
-      "week_label": "Week 7（延伸／可選）"
-    },
-    {
-      "sequence": 62,
-      "system": "Bonus-Reuse",
-      "topic_folder": "archive/topic10-concept-drafts-english-mockup/long-termism",
-      "theme_cn": "長期主義：身體健康與平衡需要時間",
-      "format": "單圖 IG Story / 會員社群貼文",
-      "tone": "同上",
-      "copy_ready": false,
-      "needs_adaptation": [
-        "英文文案需翻譯並改寫"
-      ],
-      "images_present": [
-        "cover.jpg",
-        "card-1.jpg",
-        "card-2.jpg",
-        "card-3.jpg",
-        "card-4.jpg",
-        "card-5.jpg"
-      ],
-      "status": "needs_adaptation",
-      "week": 7,
-      "week_label": "Week 7（延伸／可選）"
-    },
-    {
-      "sequence": 63,
-      "system": "Bonus-Reuse",
-      "topic_folder": "archive/topic10-concept-drafts-english-mockup/wise-choices",
-      "theme_cn": "明智選擇：保養哲學與人生階段（呼應 kepu-10.3 挑剔智慧）",
-      "format": "單圖 IG Story / 會員社群貼文",
-      "tone": "同上",
-      "copy_ready": false,
-      "needs_adaptation": [
-        "英文文案需翻譯並改寫",
-        "可作為 kepu-10.3-wise-choice 正式發布後的呼應／花絮素材"
-      ],
-      "images_present": [
-        "cover.jpg",
-        "card-1.jpg",
-        "card-2.jpg",
-        "card-3.jpg",
-        "card-4.jpg",
-        "card-5.jpg"
-      ],
-      "status": "needs_adaptation",
-      "week": 7,
-      "week_label": "Week 7（延伸／可選）"
-    },
-    {
-      "sequence": 64,
-      "system": "Bonus-Reuse",
-      "topic_folder": "archive/topic10-concept-drafts-english-mockup/effortless-as-ever",
-      "theme_cn": "一如既往的從容：身體健康之旅沒有終點（呼應 kepu-10.4 一如既往）",
-      "format": "單圖 IG Story / 會員社群貼文",
-      "tone": "同上",
-      "copy_ready": false,
-      "needs_adaptation": [
-        "英文文案需翻譯並改寫",
-        "可作為 kepu-10.4-ease-as-before 正式發布後的呼應／花絮素材"
-      ],
-      "images_present": [
-        "cover.jpg",
-        "card-1.jpg",
-        "card-2.jpg",
-        "card-3.jpg",
-        "card-4.jpg",
-        "card-5.jpg"
-      ],
-      "status": "needs_adaptation",
-      "week": 7,
-      "week_label": "Week 7（延伸／可選）"
+      "week_label": "Week 7（延伸／可選，僅此一組）"
     }
   ]
 }

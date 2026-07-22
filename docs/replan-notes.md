@@ -15,23 +15,28 @@
 | Week 5 | 生活整合 | Topic 4 生活儀式、Topic 7 微氣候 | 把保養變成日常儀式，微氣候話題也適合搭配台灣濕熱季節時事感 |
 | Week 6 | 長期陪伴收尾 | Topic 10 從修復到維持 | 收束全案，導向長期訂閱／回購 |
 
-## 不浪費素材：Week 7（延伸／可選）
+## 更正說明（重要）
 
-`archive/topic10-concept-drafts-english-mockup/` 裡的 6 組共 35 張圖（先前歸檔的英文
-Instagram 概念草稿）主題都圍繞「長期主義／長期投資」，剛好呼應 Topic 10。但視覺風格
-（暖色生活攝影、英文文案、Instagram 介面模擬）與品牌 SOP 的「極簡實驗室風＋中文數據
-標註」不同調，所以規劃為 **Week 7 延伸系列**，用途與正式 58 篇不同：
+上一版這裡寫錯了。原本以為 `_needs-manual-match` 的 6 組、35 張圖是「風格不同、尚未使用
+的概念草稿」，所以規劃成 Week 7 延伸系列全部保留。但重新用 md5 逐一比對後發現：**其中
+5 組（investment-mockup-b、long-term-stability、long-termism、wise-choices、
+effortless-as-ever）跟 `kepu-10.1` 到 `kepu-10.5` 裡正式在用的圖片是位元組完全相同的
+重複檔案**——不是風格不同的替代版本，是同一批圖被多放了一份，純粹佔空間，沒有利用價值。
+這 5 組已經從 `archive/` 刪除。
+
+真正「產出但沒用到」的只有 **1 組**：`investment-mockup-a`（「身體的資產：妳最珍貴的
+投資」），資料夾保留並改名為 `archive/topic10-unused-concept-draft/`。
+
+## 不浪費素材：Week 7（延伸／可選，僅此一組）
+
+`investment-mockup-a` 主題呼應 Topic 10 的長期投資概念，但視覺風格（暖色生活攝影＋
+Instagram 介面模擬、英文文案）與品牌 SOP 的「極簡實驗室風＋中文數據標註」不同調，規劃
+為 Week 7 延伸系列，用途與正式 58 篇不同：
 
 - **通路**：建議放 IG/FB 限時動態或會員社群，不上主 Feed，避免視覺不一致稀釋品牌調性
-- **需要的前置工作**：英文文案需翻譯並改寫成品牌語氣；部分套用暖色調的圖需要加品牌
-  色濾鏡或僅標示為「創辦人理念／品牌故事」類內容，而非科學論證類
-- **對應關係**：`wise-choices` 與 `effortless-as-ever` 兩組可以直接當作
-  `kepu-10.3-wise-choice`、`kepu-10.4-ease-as-before` 正式發布後的花絮／延伸貼文
-
-這樣一來，先前產出但風格不合主線的 35 張素材不會被閒置，而是轉為「第二波、低成本、
-會員向」的延伸內容，跟主線 58 篇區隔開來，不影響品牌一致性。
+- **需要的前置工作**：英文文案需翻譯並改寫成品牌語氣
 
 ## 檔案
 
 - `docs/publish-schedule.json`：原始版本，保留不動
-- `docs/publish-schedule-v2.json`：本次重新規劃後的完整排程（58 篇正式＋6 篇延伸＝64 篇）
+- `docs/publish-schedule-v2.json`：本次重新規劃後的完整排程（58 篇正式＋1 篇延伸＝59 篇）
