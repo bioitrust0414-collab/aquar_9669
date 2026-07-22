@@ -1,0 +1,11 @@
+{
+  "repo": "github.com/bioitrust0414-collab/aquar_9669",
+  "brand": "私密保養品牌 Aquar",
+  "generated_note": "v2.1 correction: earlier v2 mistakenly treated 5 of the 6 archived \"_needs-manual-match\" image sets as unused alternate-style drafts. A full md5 duplicate check found those 5 sets (investment-mockup-b, long-term-stability, long-termism, wise-choices, effortless-as-ever) are byte-identical duplicates of images already live in kepu-10.1~10.5 - they were never spare material, just redundant copies, and have been deleted from archive/. Only investment-mockup-a (renamed folder: archive/topic10-unused-concept-draft) was confirmed genuinely unique and unused; it remains as the sole Week 7 bonus item. Core 58-piece order (Week 1-6, funnel logic) is unchanged.",
+  "total_pieces_core": 58,
+  "total_pieces_bonus": 1,
+  "total_pieces": 59,
+  "core_fully_ready": 56,
+  "core_ready_with_accepted_gap": 2,
+  "bonus_needs_adaptation": 1
+}
