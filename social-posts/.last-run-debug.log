@@ -79,3 +79,11 @@ FAILED channel=6a605f5ee2638b94d7b1e3fe: [{'message': 'Variable "$input" got inv
 
 Left example-post in pending/ (will retry next push)
 
+## Publishing `example-post` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/example-post/image1.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a60e0b91b795b4b9f93ca03
+
+Moved example-post -> social-posts/published/example-post
+
