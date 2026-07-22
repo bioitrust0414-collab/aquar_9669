@@ -19,3 +19,11 @@ FAILED channel=67b40123456789abcdef0123: Channel not found
 
 Left example-post in pending/ (will retry next push)
 
+## Publishing `example-post` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/example-post/image1.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Invalid post: Facebook posts require a type (post, story, or reel).
+
+Left example-post in pending/ (will retry next push)
+
