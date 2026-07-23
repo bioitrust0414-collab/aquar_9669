@@ -88,7 +88,7 @@ def create_post(api_key, channel_id, text, image_urls, scheduled_at=None):
         "metadata": {"facebook": {"type": "post"}},
     }
     if scheduled_at:
-        input_fields["schedulingType"] = "custom"
+        input_fields["schedulingType"] = "automatic"
         input_fields["mode"] = "customScheduled"
         input_fields["dueAt"] = scheduled_at
     else:
