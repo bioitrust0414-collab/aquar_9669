@@ -813,3 +813,11 @@ OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e7b6a0eee9149fc35cf status=sche
 
 Moved aquar-059-investment-mockup-a -> social-posts/published/aquar-059-investment-mockup-a
 
+## Publishing `aquar-052-kepu-7.5-body-sovereignty` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-5.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Invalid post: Whoops, it looks like you've already got this one scheduled or posted around the same time. We're not able to post the same thing twice so close together.
+
+Left aquar-052-kepu-7.5-body-sovereignty in pending/ (will retry next push)
+
