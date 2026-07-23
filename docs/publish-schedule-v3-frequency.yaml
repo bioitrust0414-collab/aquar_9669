@@ -1,0 +1,1392 @@
+schema_version: '1.0'
+plan:
+  name: Aquar social publishing order (frequency-priority, v3)
+  source_repository: github.com/bioitrust0414-collab/aquar_9669
+  source_file: docs/publish-schedule-v2.json
+  source_commit: 4e7104b690534c1909b9cb4db1b4ad976196472c
+  timezone: Asia/Taipei
+  mode: sequence_only
+  publishing_enabled: false
+  review_required: true
+  timing:
+    cadence: null
+    start_at: null
+  order_basis:
+  - 發文頻率/節奏優先：以固定節奏輪流覆蓋各話題，避免同一話題連續出現，不刷存在感
+  cadence_assumption: 每週 2 篇（僅供試算週期，不寫入單篇資料）
+  estimated_duration_weeks: 29.0
+  note: 以每週 2 篇試算，58 篇核心內容加 1 篇延伸共 59 篇，完整跑完約需 29 週（約 7 個月）。確認採用完整時間軸：前 3 個月（約 13
+    週、26 篇）列為 phase_1_first_3_months，其餘列為 phase_2_extension，之後接續發布。仍為 sequence_only
+    模式，不綁定實際週次或月份，只是用 phase 標記「第一批」跟「後續」的分界，供規劃參考。
+  phase_1_item_count: 26
+  estimated_total_duration_weeks: 29
+delivery:
+  strategy: undecided
+  primary_channel: null
+  facebook_delivery: null
+  note: 待確認採 Buffer 直發 Facebook，或 Instagram 發布後由 Meta 跨貼；確認前保持停用。
+counts:
+  core: 58
+  bonus: 1
+  total: 59
+  by_status:
+    ready_with_accepted_gap: 2
+    ready: 56
+    needs_adaptation: 1
+items:
+- id: aquar-001
+  sequence: 1
+  system: B
+  theme: 微生態防禦動力學
+  content_path: content/topic-01-microbiome-dynamics
+  copy:
+    ready: true
+    file: content/topic-01-microbiome-dynamics/copy.md
+  media:
+  - content/topic-01-microbiome-dynamics/hook.jpg
+  - content/topic-01-microbiome-dynamics/transition.jpg
+  - content/topic-01-microbiome-dynamics/data.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready_with_accepted_gap
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  known_gap: 缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾
+  phase: phase_1_first_3_months
+- id: aquar-006
+  sequence: 2
+  system: B
+  theme: pH 值的生存邊界
+  content_path: content/topic-02-ph-boundary
+  copy:
+    ready: true
+    file: content/topic-02-ph-boundary/copy.md
+  media:
+  - content/topic-02-ph-boundary/hook.jpg
+  - content/topic-02-ph-boundary/transition.jpg
+  - content/topic-02-ph-boundary/data.jpg
+  - content/topic-02-ph-boundary/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-018
+  sequence: 3
+  system: B
+  theme: 分子滲透與吸收效率
+  content_path: content/topic-03-molecular-permeation
+  copy:
+    ready: true
+    file: content/topic-03-molecular-permeation/copy.md
+  media:
+  - content/topic-03-molecular-permeation/hook.jpg
+  - content/topic-03-molecular-permeation/transition.jpg
+  - content/topic-03-molecular-permeation/data.jpg
+  - content/topic-03-molecular-permeation/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-041
+  sequence: 4
+  system: B
+  theme: 環境平衡與生活儀式
+  content_path: content/topic-04-daily-ritual
+  copy:
+    ready: true
+    file: content/topic-04-daily-ritual/copy.md
+  media:
+  - content/topic-04-daily-ritual/hook.jpg
+  - content/topic-04-daily-ritual/transition.jpg
+  - content/topic-04-daily-ritual/data.jpg
+  - content/topic-04-daily-ritual/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-024
+  sequence: 5
+  system: B
+  theme: 成分潔癖的科學依據
+  content_path: content/topic-05-ingredient-purity
+  copy:
+    ready: true
+    file: content/topic-05-ingredient-purity/copy.md
+  media:
+  - content/topic-05-ingredient-purity/hook.jpg
+  - content/topic-05-ingredient-purity/transition.jpg
+  - content/topic-05-ingredient-purity/data.jpg
+  - content/topic-05-ingredient-purity/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-012
+  sequence: 6
+  system: B
+  theme: 屏障修復的負回饋循環
+  content_path: content/topic-06-barrier-repair
+  copy:
+    ready: true
+    file: content/topic-06-barrier-repair/copy.md
+  media:
+  - content/topic-06-barrier-repair/hook.jpg
+  - content/topic-06-barrier-repair/transition.jpg
+  - content/topic-06-barrier-repair/data.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready_with_accepted_gap
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  known_gap: 缺 CTA 頁圖，維持 3 頁 carousel（hook/transition/data），發布時最後一頁改用文字 CTA 收尾
+  phase: phase_1_first_3_months
+- id: aquar-047
+  sequence: 7
+  system: B
+  theme: 微氣候對人體的影響
+  content_path: content/topic-07-microclimate
+  copy:
+    ready: true
+    file: content/topic-07-microclimate/copy.md
+  media:
+  - content/topic-07-microclimate/hook.jpg
+  - content/topic-07-microclimate/transition.jpg
+  - content/topic-07-microclimate/data.jpg
+  - content/topic-07-microclimate/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-030
+  sequence: 8
+  system: B
+  theme: 數據與感性的交界
+  content_path: content/topic-08-data-vs-emotion
+  copy:
+    ready: true
+    file: content/topic-08-data-vs-emotion/copy.md
+  media:
+  - content/topic-08-data-vs-emotion/hook.jpg
+  - content/topic-08-data-vs-emotion/transition.jpg
+  - content/topic-08-data-vs-emotion/data.jpg
+  - content/topic-08-data-vs-emotion/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-036
+  sequence: 9
+  system: B
+  theme: 挑剔肌膚的權利
+  content_path: content/topic-09-selective-rights
+  copy:
+    ready: true
+    file: content/topic-09-selective-rights/copy.md
+  media:
+  - content/topic-09-selective-rights/hook.jpg
+  - content/topic-09-selective-rights/transition.jpg
+  - content/topic-09-selective-rights/data.jpg
+  - content/topic-09-selective-rights/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-053
+  sequence: 10
+  system: B
+  theme: 從「修復」到「維持」
+  content_path: content/topic-10-repair-to-maintain
+  copy:
+    ready: true
+    file: content/topic-10-repair-to-maintain/copy.md
+  media:
+  - content/topic-10-repair-to-maintain/hook.jpg
+  - content/topic-10-repair-to-maintain/transition.jpg
+  - content/topic-10-repair-to-maintain/data.jpg
+  - content/topic-10-repair-to-maintain/cta.jpg
+  format: IG carousel + FB long-form
+  tone: 生理主權／哲學科學混合語氣
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-002
+  sequence: 11
+  system: Kepu
+  theme: 微生態防禦動力學
+  content_path: content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria
+  copy:
+    ready: true
+    file: content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria/copy.md
+  media:
+  - content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria/card-1.png
+  - content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria/card-2.png
+  - content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria/card-3.png
+  - content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria/card-4.png
+  - content/topic-01-microbiome-dynamics/kepu-1.1-good-bad-bacteria/card-5.png
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-007
+  sequence: 12
+  system: Kepu
+  theme: pH 值的生存邊界
+  content_path: content/topic-02-ph-boundary/kepu-2.1-what-is-ph
+  copy:
+    ready: true
+    file: content/topic-02-ph-boundary/kepu-2.1-what-is-ph/copy.md
+  media:
+  - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-1.jpg
+  - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-2.jpg
+  - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-3.jpg
+  - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-4.jpg
+  - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-019
+  sequence: 13
+  system: Kepu
+  theme: 分子滲透與吸收效率
+  content_path: content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size
+  copy:
+    ready: true
+    file: content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/copy.md
+  media:
+  - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-1.jpg
+  - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-2.jpg
+  - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-3.jpg
+  - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-4.jpg
+  - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-042
+  sequence: 14
+  system: Kepu
+  theme: 環境平衡與生活儀式
+  content_path: content/topic-04-daily-ritual/kepu-4.1-me-time-value
+  copy:
+    ready: true
+    file: content/topic-04-daily-ritual/kepu-4.1-me-time-value/copy.md
+  media:
+  - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-1.jpg
+  - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-2.jpg
+  - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-3.jpg
+  - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-4.jpg
+  - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-025
+  sequence: 15
+  system: Kepu
+  theme: 成分潔癖的科學依據
+  content_path: content/topic-05-ingredient-purity/kepu-5.1-label-reading
+  copy:
+    ready: true
+    file: content/topic-05-ingredient-purity/kepu-5.1-label-reading/copy.md
+  media:
+  - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-1.jpg
+  - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-2.jpg
+  - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-3.jpg
+  - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-4.jpg
+  - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-013
+  sequence: 16
+  system: Kepu
+  theme: 屏障修復的負回饋循環
+  content_path: content/topic-06-barrier-repair/kepu-6.1-barrier
+  copy:
+    ready: true
+    file: content/topic-06-barrier-repair/kepu-6.1-barrier/copy.md
+  media:
+  - content/topic-06-barrier-repair/kepu-6.1-barrier/card-1.png
+  - content/topic-06-barrier-repair/kepu-6.1-barrier/card-2.png
+  - content/topic-06-barrier-repair/kepu-6.1-barrier/card-3.png
+  - content/topic-06-barrier-repair/kepu-6.1-barrier/card-4.png
+  - content/topic-06-barrier-repair/kepu-6.1-barrier/card-5.png
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-048
+  sequence: 17
+  system: Kepu
+  theme: 微氣候對人體的影響
+  content_path: content/topic-07-microclimate/kepu-7.1-concept
+  copy:
+    ready: true
+    file: content/topic-07-microclimate/kepu-7.1-concept/copy.md
+  media:
+  - content/topic-07-microclimate/kepu-7.1-concept/card-1.jpg
+  - content/topic-07-microclimate/kepu-7.1-concept/card-2.jpg
+  - content/topic-07-microclimate/kepu-7.1-concept/card-3.jpg
+  - content/topic-07-microclimate/kepu-7.1-concept/card-4.jpg
+  - content/topic-07-microclimate/kepu-7.1-concept/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-031
+  sequence: 18
+  system: Kepu
+  theme: 數據與感性的交界
+  content_path: content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data
+  copy:
+    ready: true
+    file: content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/copy.md
+  media:
+  - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-1.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-2.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-3.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-4.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-037
+  sequence: 19
+  system: Kepu
+  theme: 挑剔肌膚的權利
+  content_path: content/topic-09-selective-rights/kepu-9.1-quality-life
+  copy:
+    ready: true
+    file: content/topic-09-selective-rights/kepu-9.1-quality-life/copy.md
+  media:
+  - content/topic-09-selective-rights/kepu-9.1-quality-life/card-1.jpg
+  - content/topic-09-selective-rights/kepu-9.1-quality-life/card-2.jpg
+  - content/topic-09-selective-rights/kepu-9.1-quality-life/card-3.jpg
+  - content/topic-09-selective-rights/kepu-9.1-quality-life/card-4.jpg
+  - content/topic-09-selective-rights/kepu-9.1-quality-life/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-054
+  sequence: 20
+  system: Kepu
+  theme: 從「修復」到「維持」
+  content_path: content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment
+  copy:
+    ready: true
+    file: content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/copy.md
+  media:
+  - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-1.png
+  - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-2.png
+  - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-3.png
+  - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-4.png
+  - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-5.png
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-003
+  sequence: 21
+  system: Kepu
+  theme: 微生態防禦動力學
+  content_path: content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth
+  copy:
+    ready: true
+    file: content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/copy.md
+  media:
+  - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-1.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-2.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-3.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-4.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-008
+  sequence: 22
+  system: Kepu
+  theme: pH 值的生存邊界
+  content_path: content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45
+  copy:
+    ready: true
+    file: content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/copy.md
+  media:
+  - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-1.jpg
+  - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-2.jpg
+  - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-3.jpg
+  - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-4.jpg
+  - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-020
+  sequence: 23
+  system: Kepu
+  theme: 分子滲透與吸收效率
+  content_path: content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration
+  copy:
+    ready: true
+    file: content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/copy.md
+  media:
+  - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-1.jpg
+  - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-2.jpg
+  - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-3.jpg
+  - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-4.jpg
+  - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-043
+  sequence: 24
+  system: Kepu
+  theme: 環境平衡與生活儀式
+  content_path: content/topic-04-daily-ritual/kepu-4.2-ritual-sense
+  copy:
+    ready: true
+    file: content/topic-04-daily-ritual/kepu-4.2-ritual-sense/copy.md
+  media:
+  - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-1.jpg
+  - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-2.jpg
+  - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-3.jpg
+  - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-4.jpg
+  - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-026
+  sequence: 25
+  system: Kepu
+  theme: 成分潔癖的科學依據
+  content_path: content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend
+  copy:
+    ready: true
+    file: content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/copy.md
+  media:
+  - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-1.jpg
+  - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-2.jpg
+  - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-3.jpg
+  - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-4.jpg
+  - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-014
+  sequence: 26
+  system: Kepu
+  theme: 屏障修復的負回饋循環
+  content_path: content/topic-06-barrier-repair/kepu-6.2-less-is-more
+  copy:
+    ready: true
+    file: content/topic-06-barrier-repair/kepu-6.2-less-is-more/copy.md
+  media:
+  - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-1.jpg
+  - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-2.jpg
+  - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-3.jpg
+  - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-4.jpg
+  - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_1_first_3_months
+- id: aquar-049
+  sequence: 27
+  system: Kepu
+  theme: 微氣候對人體的影響
+  content_path: content/topic-07-microclimate/kepu-7.2-taiwan-humidity
+  copy:
+    ready: true
+    file: content/topic-07-microclimate/kepu-7.2-taiwan-humidity/copy.md
+  media:
+  - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-1.jpg
+  - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-2.jpg
+  - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-3.jpg
+  - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-4.jpg
+  - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-032
+  sequence: 28
+  system: Kepu
+  theme: 數據與感性的交界
+  content_path: content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data
+  copy:
+    ready: true
+    file: content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data/copy.md
+  media:
+  - content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data/card-1.png
+  - content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data/card-2.png
+  - content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data/card-3.png
+  - content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data/card-4.png
+  - content/topic-08-data-vs-emotion/kepu-8.2-body-signals-as-data/card-5.png
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-038
+  sequence: 29
+  system: Kepu
+  theme: 挑剔肌膚的權利
+  content_path: content/topic-09-selective-rights/kepu-9.2-market-reality
+  copy:
+    ready: true
+    file: content/topic-09-selective-rights/kepu-9.2-market-reality/copy.md
+  media:
+  - content/topic-09-selective-rights/kepu-9.2-market-reality/card-1.jpg
+  - content/topic-09-selective-rights/kepu-9.2-market-reality/card-2.jpg
+  - content/topic-09-selective-rights/kepu-9.2-market-reality/card-3.jpg
+  - content/topic-09-selective-rights/kepu-9.2-market-reality/card-4.jpg
+  - content/topic-09-selective-rights/kepu-9.2-market-reality/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-055
+  sequence: 30
+  system: Kepu
+  theme: 從「修復」到「維持」
+  content_path: content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal
+  copy:
+    ready: true
+    file: content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/copy.md
+  media:
+  - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-1.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-2.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-3.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-4.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-004
+  sequence: 31
+  system: Kepu
+  theme: 微生態防禦動力學
+  content_path: content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation
+  copy:
+    ready: true
+    file: content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/copy.md
+  media:
+  - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-1.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-2.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-3.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-4.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-009
+  sequence: 32
+  system: Kepu
+  theme: pH 值的生存邊界
+  content_path: content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance
+  copy:
+    ready: true
+    file: content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/copy.md
+  media:
+  - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-1.jpg
+  - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-2.jpg
+  - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-3.jpg
+  - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-4.jpg
+  - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-021
+  sequence: 33
+  system: Kepu
+  theme: 分子滲透與吸收效率
+  content_path: content/topic-03-molecular-permeation/kepu-3.3-absorption
+  copy:
+    ready: true
+    file: content/topic-03-molecular-permeation/kepu-3.3-absorption/copy.md
+  media:
+  - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-1.jpg
+  - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-2.jpg
+  - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-3.jpg
+  - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-4.jpg
+  - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-044
+  sequence: 34
+  system: Kepu
+  theme: 環境平衡與生活儀式
+  content_path: content/topic-04-daily-ritual/kepu-4.3-self-love-practice
+  copy:
+    ready: true
+    file: content/topic-04-daily-ritual/kepu-4.3-self-love-practice/copy.md
+  media:
+  - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-1.jpg
+  - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-2.jpg
+  - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-3.jpg
+  - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-4.jpg
+  - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-027
+  sequence: 35
+  system: Kepu
+  theme: 成分潔癖的科學依據
+  content_path: content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid
+  copy:
+    ready: true
+    file: content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/copy.md
+  media:
+  - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-1.jpg
+  - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-2.jpg
+  - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-3.jpg
+  - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-4.jpg
+  - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-015
+  sequence: 36
+  system: Kepu
+  theme: 屏障修復的負回饋循環
+  content_path: content/topic-06-barrier-repair/kepu-6.3-let-body-speak
+  copy:
+    ready: true
+    file: content/topic-06-barrier-repair/kepu-6.3-let-body-speak/copy.md
+  media:
+  - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-1.jpg
+  - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-2.jpg
+  - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-3.jpg
+  - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-4.jpg
+  - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-050
+  sequence: 37
+  system: Kepu
+  theme: 微氣候對人體的影響
+  content_path: content/topic-07-microclimate/kepu-7.3-smart-microclimate-management
+  copy:
+    ready: true
+    file: content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/copy.md
+  media:
+  - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-1.jpg
+  - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-2.jpg
+  - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-3.jpg
+  - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-4.jpg
+  - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-033
+  sequence: 38
+  system: Kepu
+  theme: 數據與感性的交界
+  content_path: content/topic-08-data-vs-emotion/kepu-8.3-gentle-science
+  copy:
+    ready: true
+    file: content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/copy.md
+  media:
+  - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-1.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-2.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-3.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-4.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-039
+  sequence: 39
+  system: Kepu
+  theme: 挑剔肌膚的權利
+  content_path: content/topic-09-selective-rights/kepu-9.3-autonomy
+  copy:
+    ready: true
+    file: content/topic-09-selective-rights/kepu-9.3-autonomy/copy.md
+  media:
+  - content/topic-09-selective-rights/kepu-9.3-autonomy/card-1.jpg
+  - content/topic-09-selective-rights/kepu-9.3-autonomy/card-2.jpg
+  - content/topic-09-selective-rights/kepu-9.3-autonomy/card-3.jpg
+  - content/topic-09-selective-rights/kepu-9.3-autonomy/card-4.jpg
+  - content/topic-09-selective-rights/kepu-9.3-autonomy/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-056
+  sequence: 40
+  system: Kepu
+  theme: 從「修復」到「維持」
+  content_path: content/topic-10-repair-to-maintain/kepu-10.3-wise-choice
+  copy:
+    ready: true
+    file: content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/copy.md
+  media:
+  - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-1.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-2.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-3.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-4.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-005
+  sequence: 41
+  system: Kepu
+  theme: 微生態防禦動力學
+  content_path: content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits
+  copy:
+    ready: true
+    file: content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/copy.md
+  media:
+  - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-1.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-2.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-3.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-4.jpg
+  - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-010
+  sequence: 42
+  system: Kepu
+  theme: pH 值的生存邊界
+  content_path: content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice
+  copy:
+    ready: true
+    file: content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/copy.md
+  media:
+  - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-1.jpg
+  - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-2.jpg
+  - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-3.jpg
+  - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-4.jpg
+  - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-022
+  sequence: 43
+  system: Kepu
+  theme: 分子滲透與吸收效率
+  content_path: content/topic-03-molecular-permeation/kepu-3.4-personalized-formula
+  copy:
+    ready: true
+    file: content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/copy.md
+  media:
+  - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-1.jpg
+  - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-2.jpg
+  - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-3.jpg
+  - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-4.jpg
+  - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-045
+  sequence: 44
+  system: Kepu
+  theme: 環境平衡與生活儀式
+  content_path: content/topic-04-daily-ritual/kepu-4.4-sensory-healing
+  copy:
+    ready: true
+    file: content/topic-04-daily-ritual/kepu-4.4-sensory-healing/copy.md
+  media:
+  - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-1.jpg
+  - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-2.jpg
+  - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-3.jpg
+  - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-4.jpg
+  - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-028
+  sequence: 45
+  system: Kepu
+  theme: 成分潔癖的科學依據
+  content_path: content/topic-05-ingredient-purity/kepu-5.4-smart-consumer
+  copy:
+    ready: true
+    file: content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/copy.md
+  media:
+  - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-1.jpg
+  - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-2.jpg
+  - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-3.jpg
+  - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-4.jpg
+  - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-016
+  sequence: 46
+  system: Kepu
+  theme: 屏障修復的負回饋循環
+  content_path: content/topic-06-barrier-repair/kepu-6.4-self-healing
+  copy:
+    ready: true
+    file: content/topic-06-barrier-repair/kepu-6.4-self-healing/copy.md
+  media:
+  - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-1.jpg
+  - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-2.jpg
+  - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-3.jpg
+  - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-4.jpg
+  - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-051
+  sequence: 47
+  system: Kepu
+  theme: 微氣候對人體的影響
+  content_path: content/topic-07-microclimate/kepu-7.4-freshness-philosophy
+  copy:
+    ready: true
+    file: content/topic-07-microclimate/kepu-7.4-freshness-philosophy/copy.md
+  media:
+  - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-1.jpg
+  - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-2.jpg
+  - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-3.jpg
+  - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-4.jpg
+  - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-034
+  sequence: 48
+  system: Kepu
+  theme: 數據與感性的交界
+  content_path: content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool
+  copy:
+    ready: true
+    file: content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/copy.md
+  media:
+  - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-1.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-2.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-3.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-4.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-040
+  sequence: 49
+  system: Kepu
+  theme: 挑剔肌膚的權利
+  content_path: content/topic-09-selective-rights/kepu-9.4-freedom-to-choose
+  copy:
+    ready: true
+    file: content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/copy.md
+  media:
+  - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-1.jpg
+  - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-2.jpg
+  - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-3.jpg
+  - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-4.jpg
+  - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-057
+  sequence: 50
+  system: Kepu
+  theme: 從「修復」到「維持」
+  content_path: content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before
+  copy:
+    ready: true
+    file: content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/copy.md
+  media:
+  - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-1.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-2.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-3.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-4.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-011
+  sequence: 51
+  system: Kepu
+  theme: pH 值的生存邊界
+  content_path: content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries
+  copy:
+    ready: true
+    file: content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/copy.md
+  media:
+  - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-1.jpg
+  - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-2.jpg
+  - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-3.jpg
+  - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-4.jpg
+  - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-023
+  sequence: 52
+  system: Kepu
+  theme: 分子滲透與吸收效率
+  content_path: content/topic-03-molecular-permeation/kepu-3.5-future-trend
+  copy:
+    ready: true
+    file: content/topic-03-molecular-permeation/kepu-3.5-future-trend/copy.md
+  media:
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-1-alt.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-1.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-2-alt.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-2.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-3-alt.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-3.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-4-alt.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-4.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-5-alt.jpg
+  - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-046
+  sequence: 53
+  system: Kepu
+  theme: 環境平衡與生活儀式
+  content_path: content/topic-04-daily-ritual/kepu-4.5-body-connection
+  copy:
+    ready: true
+    file: content/topic-04-daily-ritual/kepu-4.5-body-connection/copy.md
+  media:
+  - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-1.jpg
+  - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-2.jpg
+  - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-3.jpg
+  - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-4.jpg
+  - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-029
+  sequence: 54
+  system: Kepu
+  theme: 成分潔癖的科學依據
+  content_path: content/topic-05-ingredient-purity/kepu-5.5-discipline
+  copy:
+    ready: true
+    file: content/topic-05-ingredient-purity/kepu-5.5-discipline/copy.md
+  media:
+  - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-1.jpg
+  - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-2.jpg
+  - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-3.jpg
+  - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-4.jpg
+  - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-017
+  sequence: 55
+  system: Kepu
+  theme: 屏障修復的負回饋循環
+  content_path: content/topic-06-barrier-repair/kepu-6.5-patience-in-repair
+  copy:
+    ready: true
+    file: content/topic-06-barrier-repair/kepu-6.5-patience-in-repair/copy.md
+  media:
+  - content/topic-06-barrier-repair/kepu-6.5-patience-in-repair/card-1.jpg
+  - content/topic-06-barrier-repair/kepu-6.5-patience-in-repair/card-2.jpg
+  - content/topic-06-barrier-repair/kepu-6.5-patience-in-repair/card-3.jpg
+  - content/topic-06-barrier-repair/kepu-6.5-patience-in-repair/card-4.jpg
+  - content/topic-06-barrier-repair/kepu-6.5-patience-in-repair/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-052
+  sequence: 56
+  system: Kepu
+  theme: 微氣候對人體的影響
+  content_path: content/topic-07-microclimate/kepu-7.5-body-sovereignty
+  copy:
+    ready: true
+    file: content/topic-07-microclimate/kepu-7.5-body-sovereignty/copy.md
+  media:
+  - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-1.jpg
+  - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-2.jpg
+  - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-3.jpg
+  - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-4.jpg
+  - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-035
+  sequence: 57
+  system: Kepu
+  theme: 數據與感性的交界
+  content_path: content/topic-08-data-vs-emotion/kepu-8.5-transparency
+  copy:
+    ready: true
+    file: content/topic-08-data-vs-emotion/kepu-8.5-transparency/copy.md
+  media:
+  - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-1.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-2.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-3.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-4.jpg
+  - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-058
+  sequence: 58
+  system: Kepu
+  theme: 從「修復」到「維持」
+  content_path: content/topic-10-repair-to-maintain/kepu-10.5-commitment
+  copy:
+    ready: true
+    file: content/topic-10-repair-to-maintain/kepu-10.5-commitment/copy.md
+  media:
+  - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-1.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-2.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-3.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-4.jpg
+  - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-5.jpg
+  format: 衛教科普版：FB長文 + IG圖卡
+  tone: 口語化衛教，去術語
+  source_status: ready
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  phase: phase_2_extension
+- id: aquar-059
+  sequence: 59
+  system: Bonus-Reuse
+  theme: 身體的資產：妳最珍貴的投資（唯一確認未使用的延伸素材）
+  content_path: archive/topic10-unused-concept-draft/investment-mockup-a
+  copy:
+    ready: false
+    file: null
+  media:
+  - archive/topic10-unused-concept-draft/investment-mockup-a/cover.jpg
+  - archive/topic10-unused-concept-draft/investment-mockup-a/card-1.jpg
+  - archive/topic10-unused-concept-draft/investment-mockup-a/card-2.jpg
+  - archive/topic10-unused-concept-draft/investment-mockup-a/card-3.jpg
+  - archive/topic10-unused-concept-draft/investment-mockup-a/card-4.jpg
+  - archive/topic10-unused-concept-draft/investment-mockup-a/card-5.jpg
+  format: 單圖 IG Story / 會員社群貼文（非主 Feed）
+  tone: 溫暖生活風，作為 Topic 10 的情感延伸，非數據論證
+  source_status: needs_adaptation
+  release:
+    enabled: false
+    approval: pending
+    publish_at: null
+    buffer_mode: null
+  needs_adaptation:
+  - 英文文案需翻譯並改寫成品牌語氣
+  - 視覺風格（暖色生活攝影＋Instagram 介面模擬）與實驗室風不同，建議僅用於 Story/會員限定通路
+  phase: phase_2_extension
