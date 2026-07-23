@@ -80,19 +80,24 @@ def build_assets(image_urls):
     return [{"image": {"url": url}} for url in image_urls]
 
 
-def create_post(api_key, channel_id, text, image_urls):
+def create_post(api_key, channel_id, text, image_urls, scheduled_at=None):
+    input_fields = {
+        "text": text,
+        "channelId": channel_id,
+        "assets": build_assets(image_urls),
+        "metadata": {"facebook": {"type": "post"}},
+    }
+    if scheduled_at:
+        input_fields["schedulingType"] = "custom"
+        input_fields["mode"] = "customScheduled"
+        input_fields["dueAt"] = scheduled_at
+    else:
+        input_fields["schedulingType"] = "automatic"
+        input_fields["mode"] = "addToQueue"
+
     payload = {
         "query": CREATE_POST_MUTATION,
-        "variables": {
-            "input": {
-                "text": text,
-                "channelId": channel_id,
-                "schedulingType": "automatic",
-                "mode": "addToQueue",
-                "assets": build_assets(image_urls),
-                "metadata": {"facebook": {"type": "post"}},
-            }
-        },
+        "variables": {"input": input_fields},
     }
     resp = requests.post(
         BUFFER_API_URL,
@@ -154,6 +159,7 @@ def main():
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         text = manifest.get("text", "")
         image_filenames = manifest.get("images", [])
+        scheduled_at = manifest.get("scheduled_at")
         image_urls = [
             raw_url(repo, ref, f"{post_dir.as_posix()}/{fn}")
             for fn in image_filenames
@@ -163,7 +169,7 @@ def main():
         log_summary(f"Image URLs: {image_urls}")
         all_ok = True
         for channel_id in channel_ids:
-            ok, result = create_post(api_key, channel_id, text, image_urls)
+            ok, result = create_post(api_key, channel_id, text, image_urls, scheduled_at)
             if ok:
                 log_summary(
                     f"OK channel={channel_id} post_id={result.get('id')} "
