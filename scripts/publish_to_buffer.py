@@ -54,7 +54,7 @@ CREATE_POST_MUTATION = """
 mutation CreatePost($input: CreatePostInput!) {
   createPost(input: $input) {
     ... on PostActionSuccess {
-      post { id text status }
+      post { id text status assets { id mimeType } }
     }
     ... on MutationError {
       message
@@ -88,7 +88,7 @@ def create_post(api_key, channel_id, text, image_urls):
                 "text": text,
                 "channelId": channel_id,
                 "schedulingType": "automatic",
-                "mode": "addToQueue",
+                "mode": "shareNow",
                 "assets": build_assets(image_urls),
                 "metadata": {"facebook": {"type": "post"}},
             }
@@ -165,7 +165,10 @@ def main():
         for channel_id in channel_ids:
             ok, result = create_post(api_key, channel_id, text, image_urls)
             if ok:
-                log_summary(f"OK channel={channel_id} post_id={result.get('id')}")
+                log_summary(
+                    f"OK channel={channel_id} post_id={result.get('id')} "
+                    f"status={result.get('status')} assets={result.get('assets')}"
+                )
             else:
                 all_ok = False
                 log_summary(f"FAILED channel={channel_id}: {result}")
