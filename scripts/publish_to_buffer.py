@@ -88,7 +88,7 @@ def create_post(api_key, channel_id, text, image_urls):
                 "text": text,
                 "channelId": channel_id,
                 "schedulingType": "automatic",
-                "mode": "shareNow",
+                "mode": "addToQueue",
                 "assets": build_assets(image_urls),
                 "metadata": {"facebook": {"type": "post"}},
             }
