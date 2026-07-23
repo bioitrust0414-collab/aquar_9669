@@ -103,3 +103,43 @@ OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a61de1a81875fee00750b6e status=send
 
 Moved aquar-006-ph-boundary -> social-posts/published/aquar-006-ph-boundary
 
+## Publishing `aquar-012-barrier-repair` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-012-barrier-repair/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-012-barrier-repair/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-012-barrier-repair/data.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Cannot add to queue: No posting schedule configured for this channel
+
+Left aquar-012-barrier-repair in pending/ (will retry next push)
+
+## Publishing `aquar-018-molecular-permeation` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-018-molecular-permeation/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-018-molecular-permeation/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-018-molecular-permeation/data.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-018-molecular-permeation/cta.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Cannot add to queue: No posting schedule configured for this channel
+
+Left aquar-018-molecular-permeation in pending/ (will retry next push)
+
+## Publishing `aquar-024-ingredient-purity` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-024-ingredient-purity/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-024-ingredient-purity/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-024-ingredient-purity/data.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-024-ingredient-purity/cta.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Cannot add to queue: No posting schedule configured for this channel
+
+Left aquar-024-ingredient-purity in pending/ (will retry next push)
+
+## Publishing `aquar-041-daily-ritual` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-041-daily-ritual/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-041-daily-ritual/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-041-daily-ritual/data.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-041-daily-ritual/cta.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Cannot add to queue: No posting schedule configured for this channel
+
+Left aquar-041-daily-ritual in pending/ (will retry next push)
+
+## Publishing `aquar-047-microclimate` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-047-microclimate/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-047-microclimate/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-047-microclimate/data.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-047-microclimate/cta.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Cannot add to queue: No posting schedule configured for this channel
+
+Left aquar-047-microclimate in pending/ (will retry next push)
+
