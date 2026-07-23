@@ -749,3 +749,67 @@ requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.buffer.com', port
 
 ```
 
+## Publishing `aquar-052-kepu-7.5-body-sovereignty` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-052-kepu-7.5-body-sovereignty/card-5.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Invalid post: Whoops, it looks like you've already got this one scheduled or posted around the same time. We're not able to post the same thing twice so close together.
+
+Left aquar-052-kepu-7.5-body-sovereignty in pending/ (will retry next push)
+
+## Publishing `aquar-053-topic-10-repair-to-maintain` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-053-topic-10-repair-to-maintain/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-053-topic-10-repair-to-maintain/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-053-topic-10-repair-to-maintain/data.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-053-topic-10-repair-to-maintain/cta.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e706a0eee9149fc34e6 status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-053-topic-10-repair-to-maintain -> social-posts/published/aquar-053-topic-10-repair-to-maintain
+
+## Publishing `aquar-054-kepu-10.1-long-term-investment` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-054-kepu-10.1-long-term-investment/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-054-kepu-10.1-long-term-investment/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-054-kepu-10.1-long-term-investment/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-054-kepu-10.1-long-term-investment/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-054-kepu-10.1-long-term-investment/card-5.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e724abca97038dbcba7 status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-054-kepu-10.1-long-term-investment -> social-posts/published/aquar-054-kepu-10.1-long-term-investment
+
+## Publishing `aquar-055-kepu-10.2-brave-refusal` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-055-kepu-10.2-brave-refusal/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-055-kepu-10.2-brave-refusal/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-055-kepu-10.2-brave-refusal/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-055-kepu-10.2-brave-refusal/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-055-kepu-10.2-brave-refusal/card-5.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e735d73dcf9000e8016 status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-055-kepu-10.2-brave-refusal -> social-posts/published/aquar-055-kepu-10.2-brave-refusal
+
+## Publishing `aquar-056-kepu-10.3-wise-choice` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-056-kepu-10.3-wise-choice/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-056-kepu-10.3-wise-choice/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-056-kepu-10.3-wise-choice/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-056-kepu-10.3-wise-choice/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-056-kepu-10.3-wise-choice/card-5.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e751cc51984e5508dbf status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-056-kepu-10.3-wise-choice -> social-posts/published/aquar-056-kepu-10.3-wise-choice
+
+## Publishing `aquar-057-kepu-10.4-ease-as-before` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-057-kepu-10.4-ease-as-before/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-057-kepu-10.4-ease-as-before/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-057-kepu-10.4-ease-as-before/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-057-kepu-10.4-ease-as-before/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-057-kepu-10.4-ease-as-before/card-5.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e776a0eee9149fc355a status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-057-kepu-10.4-ease-as-before -> social-posts/published/aquar-057-kepu-10.4-ease-as-before
+
+## Publishing `aquar-058-kepu-10.5-commitment` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-058-kepu-10.5-commitment/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-058-kepu-10.5-commitment/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-058-kepu-10.5-commitment/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-058-kepu-10.5-commitment/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-058-kepu-10.5-commitment/card-5.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e784abca97038dbcbf3 status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-058-kepu-10.5-commitment -> social-posts/published/aquar-058-kepu-10.5-commitment
+
+## Publishing `aquar-059-investment-mockup-a` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-059-investment-mockup-a/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-059-investment-mockup-a/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-059-investment-mockup-a/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-059-investment-mockup-a/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-059-investment-mockup-a/card-5.jpg']
+
+OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a626e7b6a0eee9149fc35cf status=scheduled assets=[{'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}, {'id': None, 'mimeType': 'image/jpeg'}]
+
+Moved aquar-059-investment-mockup-a -> social-posts/published/aquar-059-investment-mockup-a
+
