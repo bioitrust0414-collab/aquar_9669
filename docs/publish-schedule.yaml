@@ -83,7 +83,7 @@ items:
   content_path: content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth
   copy:
     ready: true
-    file: content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/copy.docx
+    file: content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/copy.md
   media:
   - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-1.jpg
   - content/topic-01-microbiome-dynamics/kepu-1.2-sterile-myth/card-2.jpg
@@ -105,7 +105,7 @@ items:
   content_path: content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation
   copy:
     ready: true
-    file: content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/copy.docx
+    file: content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/copy.md
   media:
   - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-1.jpg
   - content/topic-01-microbiome-dynamics/kepu-1.3-molecular-permeation/card-2.jpg
@@ -127,7 +127,7 @@ items:
   content_path: content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits
   copy:
     ready: true
-    file: content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/copy.docx
+    file: content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/copy.md
   media:
   - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-1.jpg
   - content/topic-01-microbiome-dynamics/kepu-1.4-daily-habits/card-2.jpg
@@ -170,7 +170,7 @@ items:
   content_path: content/topic-02-ph-boundary/kepu-2.1-what-is-ph
   copy:
     ready: true
-    file: content/topic-02-ph-boundary/kepu-2.1-what-is-ph/copy.docx
+    file: content/topic-02-ph-boundary/kepu-2.1-what-is-ph/copy.md
   media:
   - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-1.jpg
   - content/topic-02-ph-boundary/kepu-2.1-what-is-ph/card-2.jpg
@@ -192,7 +192,7 @@ items:
   content_path: content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45
   copy:
     ready: true
-    file: content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/copy.docx
+    file: content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/copy.md
   media:
   - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-1.jpg
   - content/topic-02-ph-boundary/kepu-2.2-golden-ratio-ph45/card-2.jpg
@@ -214,7 +214,7 @@ items:
   content_path: content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance
   copy:
     ready: true
-    file: content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/copy.docx
+    file: content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/copy.md
   media:
   - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-1.jpg
   - content/topic-02-ph-boundary/kepu-2.3-recognizing-imbalance/card-2.jpg
@@ -236,7 +236,7 @@ items:
   content_path: content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice
   copy:
     ready: true
-    file: content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/copy.docx
+    file: content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/copy.md
   media:
   - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-1.jpg
   - content/topic-02-ph-boundary/kepu-2.4-gentle-product-choice/card-2.jpg
@@ -258,7 +258,7 @@ items:
   content_path: content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries
   copy:
     ready: true
-    file: content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/copy.docx
+    file: content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/copy.md
   media:
   - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-1.jpg
   - content/topic-02-ph-boundary/kepu-2.5-guarding-boundaries/card-2.jpg
@@ -301,7 +301,7 @@ items:
   content_path: content/topic-06-barrier-repair/kepu-6.1-barrier
   copy:
     ready: true
-    file: content/topic-06-barrier-repair/kepu-6.1-barrier/copy.docx
+    file: content/topic-06-barrier-repair/kepu-6.1-barrier/copy.md
   media:
   - content/topic-06-barrier-repair/kepu-6.1-barrier/card-1.png
   - content/topic-06-barrier-repair/kepu-6.1-barrier/card-2.png
@@ -323,7 +323,7 @@ items:
   content_path: content/topic-06-barrier-repair/kepu-6.2-less-is-more
   copy:
     ready: true
-    file: content/topic-06-barrier-repair/kepu-6.2-less-is-more/copy.docx
+    file: content/topic-06-barrier-repair/kepu-6.2-less-is-more/copy.md
   media:
   - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-1.jpg
   - content/topic-06-barrier-repair/kepu-6.2-less-is-more/card-2.jpg
@@ -345,7 +345,7 @@ items:
   content_path: content/topic-06-barrier-repair/kepu-6.3-let-body-speak
   copy:
     ready: true
-    file: content/topic-06-barrier-repair/kepu-6.3-let-body-speak/copy.docx
+    file: content/topic-06-barrier-repair/kepu-6.3-let-body-speak/copy.md
   media:
   - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-1.jpg
   - content/topic-06-barrier-repair/kepu-6.3-let-body-speak/card-2.jpg
@@ -367,7 +367,7 @@ items:
   content_path: content/topic-06-barrier-repair/kepu-6.4-self-healing
   copy:
     ready: true
-    file: content/topic-06-barrier-repair/kepu-6.4-self-healing/copy.docx
+    file: content/topic-06-barrier-repair/kepu-6.4-self-healing/copy.md
   media:
   - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-1.jpg
   - content/topic-06-barrier-repair/kepu-6.4-self-healing/card-2.jpg
@@ -432,7 +432,7 @@ items:
   content_path: content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size
   copy:
     ready: true
-    file: content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/copy.docx
+    file: content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/copy.md
   media:
   - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-1.jpg
   - content/topic-03-molecular-permeation/kepu-3.1-absorption-molecular-size/card-2.jpg
@@ -454,7 +454,7 @@ items:
   content_path: content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration
   copy:
     ready: true
-    file: content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/copy.docx
+    file: content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/copy.md
   media:
   - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-1.jpg
   - content/topic-03-molecular-permeation/kepu-3.2-art-of-penetration/card-2.jpg
@@ -476,7 +476,7 @@ items:
   content_path: content/topic-03-molecular-permeation/kepu-3.3-absorption
   copy:
     ready: true
-    file: content/topic-03-molecular-permeation/kepu-3.3-absorption/copy.docx
+    file: content/topic-03-molecular-permeation/kepu-3.3-absorption/copy.md
   media:
   - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-1.jpg
   - content/topic-03-molecular-permeation/kepu-3.3-absorption/card-2.jpg
@@ -498,7 +498,7 @@ items:
   content_path: content/topic-03-molecular-permeation/kepu-3.4-personalized-formula
   copy:
     ready: true
-    file: content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/copy.docx
+    file: content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/copy.md
   media:
   - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-1.jpg
   - content/topic-03-molecular-permeation/kepu-3.4-personalized-formula/card-2.jpg
@@ -520,7 +520,7 @@ items:
   content_path: content/topic-03-molecular-permeation/kepu-3.5-future-trend
   copy:
     ready: true
-    file: content/topic-03-molecular-permeation/kepu-3.5-future-trend/copy.docx
+    file: content/topic-03-molecular-permeation/kepu-3.5-future-trend/copy.md
   media:
   - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-1-alt.jpg
   - content/topic-03-molecular-permeation/kepu-3.5-future-trend/card-1.jpg
@@ -568,7 +568,7 @@ items:
   content_path: content/topic-05-ingredient-purity/kepu-5.1-label-reading
   copy:
     ready: true
-    file: content/topic-05-ingredient-purity/kepu-5.1-label-reading/copy.docx
+    file: content/topic-05-ingredient-purity/kepu-5.1-label-reading/copy.md
   media:
   - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-1.jpg
   - content/topic-05-ingredient-purity/kepu-5.1-label-reading/card-2.jpg
@@ -590,7 +590,7 @@ items:
   content_path: content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend
   copy:
     ready: true
-    file: content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/copy.docx
+    file: content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/copy.md
   media:
   - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-1.jpg
   - content/topic-05-ingredient-purity/kepu-5.2-minimalist-trend/card-2.jpg
@@ -612,7 +612,7 @@ items:
   content_path: content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid
   copy:
     ready: true
-    file: content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/copy.docx
+    file: content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/copy.md
   media:
   - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-1.jpg
   - content/topic-05-ingredient-purity/kepu-5.3-ingredients-to-avoid/card-2.jpg
@@ -634,7 +634,7 @@ items:
   content_path: content/topic-05-ingredient-purity/kepu-5.4-smart-consumer
   copy:
     ready: true
-    file: content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/copy.docx
+    file: content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/copy.md
   media:
   - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-1.jpg
   - content/topic-05-ingredient-purity/kepu-5.4-smart-consumer/card-2.jpg
@@ -656,7 +656,7 @@ items:
   content_path: content/topic-05-ingredient-purity/kepu-5.5-discipline
   copy:
     ready: true
-    file: content/topic-05-ingredient-purity/kepu-5.5-discipline/copy.docx
+    file: content/topic-05-ingredient-purity/kepu-5.5-discipline/copy.md
   media:
   - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-1.jpg
   - content/topic-05-ingredient-purity/kepu-5.5-discipline/card-2.jpg
@@ -699,7 +699,7 @@ items:
   content_path: content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data
   copy:
     ready: true
-    file: content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/copy.docx
+    file: content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/copy.md
   media:
   - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-1.jpg
   - content/topic-08-data-vs-emotion/kepu-8.1-meaning-of-data/card-2.jpg
@@ -743,7 +743,7 @@ items:
   content_path: content/topic-08-data-vs-emotion/kepu-8.3-gentle-science
   copy:
     ready: true
-    file: content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/copy.docx
+    file: content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/copy.md
   media:
   - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-1.jpg
   - content/topic-08-data-vs-emotion/kepu-8.3-gentle-science/card-2.jpg
@@ -765,7 +765,7 @@ items:
   content_path: content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool
   copy:
     ready: true
-    file: content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/copy.docx
+    file: content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/copy.md
   media:
   - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-1.jpg
   - content/topic-08-data-vs-emotion/kepu-8.4-data-as-tool/card-2.jpg
@@ -787,7 +787,7 @@ items:
   content_path: content/topic-08-data-vs-emotion/kepu-8.5-transparency
   copy:
     ready: true
-    file: content/topic-08-data-vs-emotion/kepu-8.5-transparency/copy.docx
+    file: content/topic-08-data-vs-emotion/kepu-8.5-transparency/copy.md
   media:
   - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-1.jpg
   - content/topic-08-data-vs-emotion/kepu-8.5-transparency/card-2.jpg
@@ -830,7 +830,7 @@ items:
   content_path: content/topic-09-selective-rights/kepu-9.1-quality-life
   copy:
     ready: true
-    file: content/topic-09-selective-rights/kepu-9.1-quality-life/copy.docx
+    file: content/topic-09-selective-rights/kepu-9.1-quality-life/copy.md
   media:
   - content/topic-09-selective-rights/kepu-9.1-quality-life/card-1.jpg
   - content/topic-09-selective-rights/kepu-9.1-quality-life/card-2.jpg
@@ -852,7 +852,7 @@ items:
   content_path: content/topic-09-selective-rights/kepu-9.2-market-reality
   copy:
     ready: true
-    file: content/topic-09-selective-rights/kepu-9.2-market-reality/copy.docx
+    file: content/topic-09-selective-rights/kepu-9.2-market-reality/copy.md
   media:
   - content/topic-09-selective-rights/kepu-9.2-market-reality/card-1.jpg
   - content/topic-09-selective-rights/kepu-9.2-market-reality/card-2.jpg
@@ -874,7 +874,7 @@ items:
   content_path: content/topic-09-selective-rights/kepu-9.3-autonomy
   copy:
     ready: true
-    file: content/topic-09-selective-rights/kepu-9.3-autonomy/copy.docx
+    file: content/topic-09-selective-rights/kepu-9.3-autonomy/copy.md
   media:
   - content/topic-09-selective-rights/kepu-9.3-autonomy/card-1.jpg
   - content/topic-09-selective-rights/kepu-9.3-autonomy/card-2.jpg
@@ -896,7 +896,7 @@ items:
   content_path: content/topic-09-selective-rights/kepu-9.4-freedom-to-choose
   copy:
     ready: true
-    file: content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/copy.docx
+    file: content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/copy.md
   media:
   - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-1.jpg
   - content/topic-09-selective-rights/kepu-9.4-freedom-to-choose/card-2.jpg
@@ -939,7 +939,7 @@ items:
   content_path: content/topic-04-daily-ritual/kepu-4.1-me-time-value
   copy:
     ready: true
-    file: content/topic-04-daily-ritual/kepu-4.1-me-time-value/copy.docx
+    file: content/topic-04-daily-ritual/kepu-4.1-me-time-value/copy.md
   media:
   - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-1.jpg
   - content/topic-04-daily-ritual/kepu-4.1-me-time-value/card-2.jpg
@@ -961,7 +961,7 @@ items:
   content_path: content/topic-04-daily-ritual/kepu-4.2-ritual-sense
   copy:
     ready: true
-    file: content/topic-04-daily-ritual/kepu-4.2-ritual-sense/copy.docx
+    file: content/topic-04-daily-ritual/kepu-4.2-ritual-sense/copy.md
   media:
   - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-1.jpg
   - content/topic-04-daily-ritual/kepu-4.2-ritual-sense/card-2.jpg
@@ -983,7 +983,7 @@ items:
   content_path: content/topic-04-daily-ritual/kepu-4.3-self-love-practice
   copy:
     ready: true
-    file: content/topic-04-daily-ritual/kepu-4.3-self-love-practice/copy.docx
+    file: content/topic-04-daily-ritual/kepu-4.3-self-love-practice/copy.md
   media:
   - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-1.jpg
   - content/topic-04-daily-ritual/kepu-4.3-self-love-practice/card-2.jpg
@@ -1005,7 +1005,7 @@ items:
   content_path: content/topic-04-daily-ritual/kepu-4.4-sensory-healing
   copy:
     ready: true
-    file: content/topic-04-daily-ritual/kepu-4.4-sensory-healing/copy.docx
+    file: content/topic-04-daily-ritual/kepu-4.4-sensory-healing/copy.md
   media:
   - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-1.jpg
   - content/topic-04-daily-ritual/kepu-4.4-sensory-healing/card-2.jpg
@@ -1027,7 +1027,7 @@ items:
   content_path: content/topic-04-daily-ritual/kepu-4.5-body-connection
   copy:
     ready: true
-    file: content/topic-04-daily-ritual/kepu-4.5-body-connection/copy.docx
+    file: content/topic-04-daily-ritual/kepu-4.5-body-connection/copy.md
   media:
   - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-1.jpg
   - content/topic-04-daily-ritual/kepu-4.5-body-connection/card-2.jpg
@@ -1070,7 +1070,7 @@ items:
   content_path: content/topic-07-microclimate/kepu-7.1-concept
   copy:
     ready: true
-    file: content/topic-07-microclimate/kepu-7.1-concept/copy.docx
+    file: content/topic-07-microclimate/kepu-7.1-concept/copy.md
   media:
   - content/topic-07-microclimate/kepu-7.1-concept/card-1.jpg
   - content/topic-07-microclimate/kepu-7.1-concept/card-2.jpg
@@ -1092,7 +1092,7 @@ items:
   content_path: content/topic-07-microclimate/kepu-7.2-taiwan-humidity
   copy:
     ready: true
-    file: content/topic-07-microclimate/kepu-7.2-taiwan-humidity/copy.docx
+    file: content/topic-07-microclimate/kepu-7.2-taiwan-humidity/copy.md
   media:
   - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-1.jpg
   - content/topic-07-microclimate/kepu-7.2-taiwan-humidity/card-2.jpg
@@ -1114,7 +1114,7 @@ items:
   content_path: content/topic-07-microclimate/kepu-7.3-smart-microclimate-management
   copy:
     ready: true
-    file: content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/copy.docx
+    file: content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/copy.md
   media:
   - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-1.jpg
   - content/topic-07-microclimate/kepu-7.3-smart-microclimate-management/card-2.jpg
@@ -1136,7 +1136,7 @@ items:
   content_path: content/topic-07-microclimate/kepu-7.4-freshness-philosophy
   copy:
     ready: true
-    file: content/topic-07-microclimate/kepu-7.4-freshness-philosophy/copy.docx
+    file: content/topic-07-microclimate/kepu-7.4-freshness-philosophy/copy.md
   media:
   - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-1.jpg
   - content/topic-07-microclimate/kepu-7.4-freshness-philosophy/card-2.jpg
@@ -1158,7 +1158,7 @@ items:
   content_path: content/topic-07-microclimate/kepu-7.5-body-sovereignty
   copy:
     ready: true
-    file: content/topic-07-microclimate/kepu-7.5-body-sovereignty/copy.docx
+    file: content/topic-07-microclimate/kepu-7.5-body-sovereignty/copy.md
   media:
   - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-1.jpg
   - content/topic-07-microclimate/kepu-7.5-body-sovereignty/card-2.jpg
@@ -1201,7 +1201,7 @@ items:
   content_path: content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment
   copy:
     ready: true
-    file: content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/copy.docx
+    file: content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/copy.md
   media:
   - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-1.png
   - content/topic-10-repair-to-maintain/kepu-10.1-long-term-investment/card-2.png
@@ -1223,7 +1223,7 @@ items:
   content_path: content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal
   copy:
     ready: true
-    file: content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/copy.docx
+    file: content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/copy.md
   media:
   - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-1.jpg
   - content/topic-10-repair-to-maintain/kepu-10.2-brave-refusal/card-2.jpg
@@ -1245,7 +1245,7 @@ items:
   content_path: content/topic-10-repair-to-maintain/kepu-10.3-wise-choice
   copy:
     ready: true
-    file: content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/copy.docx
+    file: content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/copy.md
   media:
   - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-1.jpg
   - content/topic-10-repair-to-maintain/kepu-10.3-wise-choice/card-2.jpg
@@ -1267,7 +1267,7 @@ items:
   content_path: content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before
   copy:
     ready: true
-    file: content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/copy.docx
+    file: content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/copy.md
   media:
   - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-1.jpg
   - content/topic-10-repair-to-maintain/kepu-10.4-ease-as-before/card-2.jpg
@@ -1289,7 +1289,7 @@ items:
   content_path: content/topic-10-repair-to-maintain/kepu-10.5-commitment
   copy:
     ready: true
-    file: content/topic-10-repair-to-maintain/kepu-10.5-commitment/copy.docx
+    file: content/topic-10-repair-to-maintain/kepu-10.5-commitment/copy.md
   media:
   - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-1.jpg
   - content/topic-10-repair-to-maintain/kepu-10.5-commitment/card-2.jpg
