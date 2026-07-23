@@ -19,6 +19,12 @@ plan:
   - 生活整合
   - 長期陪伴收尾
   - 延伸素材，預設不發布
+  known_content_gaps:
+  - topic: topic-09-selective-rights
+    gap: 缺第 5 個子議題（矩陣原題：身體的資產：妳的身體是妳最珍貴的資產，值得最極致的呵護）。素材 archive/topic10-unused-concept-draft/investment-mockup-a
+      的視覺風格與品牌 SOP 不同調，維持獨立延伸項目，不補位成 kepu-9.5。
+  - topic: topic-10-repair-to-maintain
+    gap: 矩陣子議題 3（長期主義：為什麼身體的健康與平衡需要時間與持續的投入）目前只有文案草稿 archive/kepu-topic10-extra/long-termism.docx，沒有對應圖卡，暫列缺素材，不納入排程。
 delivery:
   strategy: undecided
   primary_channel: null
