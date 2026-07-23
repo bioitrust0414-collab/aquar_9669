@@ -7,5 +7,6 @@
     "card-4.jpg",
     "card-5.jpg"
   ],
-  "scheduled_at": "2027-01-29T00:15:00Z"
+  "scheduled_at": "2027-01-29T00:15:00Z",
+  "_retry": true
 }
