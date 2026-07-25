@@ -4,6 +4,10 @@ on:
   push:
     paths:
       - 'social-posts/pending/**'
+  schedule:
+    # 每週二、三、四、五 00:05 UTC（台北時間 08:05）
+    - cron: '5 0 * * 2,3,4,5'
+  workflow_dispatch:  # 允許手動觸發
 
 jobs:
   publish:
@@ -22,12 +26,24 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Determine publishing strategy
+        id: strategy
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" || "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "mode=scheduled" >> $GITHUB_OUTPUT
+            echo "Publishing ONE post (scheduled mode)"
+          else
+            echo "mode=all" >> $GITHUB_OUTPUT
+            echo "Publishing ALL pending posts (push mode)"
+          fi
+
       - name: Publish pending posts to Buffer
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_ACCESS_TOKEN }}
           BUFFER_CHANNEL_IDS: ${{ secrets.BUFFER_CHANNEL_IDS }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_REF_NAME: ${{ github.ref_name }}
+          PUBLISH_MODE: ${{ steps.strategy.outputs.mode }}
         run: python scripts/publish_to_buffer.py
 
       - name: Commit published/ moves and debug log
