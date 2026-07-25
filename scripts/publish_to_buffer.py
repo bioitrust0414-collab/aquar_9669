@@ -12,6 +12,10 @@ requires a publicly reachable media URL. This only works because this
 repo is public; if the repo is ever made private, these URLs will stop
 resolving for Buffer and posts with images will fail.
 
+IMPROVEMENT: This version extracts image dimensions from local files
+before publishing, ensuring Buffer can properly display image previews
+and metadata.
+
 Required env vars:
   BUFFER_API_KEY      - personal API key from Buffer (Bearer token, NOT
                          the old OAuth "access_token")
@@ -29,6 +33,12 @@ import traceback
 from pathlib import Path
 
 import requests
+
+try:
+    from PIL import Image
+    HAS_PIL = True
+except ImportError:
+    HAS_PIL = False
 
 
 DEBUG_LOG_PATH = Path("social-posts/.last-run-debug.log")
@@ -76,15 +86,62 @@ def raw_url(repo, ref, path):
     return f"https://raw.githubusercontent.com/{repo}/{ref}/{path}"
 
 
-def build_assets(image_urls):
-    return [{"image": {"url": url}} for url in image_urls]
+def get_image_dimensions(file_path):
+    """Extract image dimensions from a local file.
+    
+    Args:
+        file_path: Path to the image file
+        
+    Returns:
+        Tuple of (width, height) or None if extraction fails
+    """
+    if not HAS_PIL:
+        return None
+    
+    try:
+        if os.path.exists(file_path):
+            img = Image.open(file_path)
+            width, height = img.size
+            return (width, height)
+    except Exception as e:
+        # Silently skip on error - Buffer will handle missing dimensions
+        pass
+    
+    return None
 
 
-def create_post(api_key, channel_id, text, image_urls, scheduled_at=None):
+def build_assets(image_urls, local_image_paths=None):
+    """Build asset objects with image URLs and optional dimensions.
+    
+    Args:
+        image_urls: List of remote image URLs (raw.githubusercontent.com)
+        local_image_paths: Optional list of local file paths for dimension extraction
+    
+    Returns:
+        List of asset objects with URL and optional width/height
+    """
+    assets = []
+    for i, url in enumerate(image_urls):
+        asset = {"image": {"url": url}}
+        
+        # If local paths provided, try to extract dimensions
+        if local_image_paths and i < len(local_image_paths):
+            dims = get_image_dimensions(local_image_paths[i])
+            if dims:
+                width, height = dims
+                asset["image"]["width"] = width
+                asset["image"]["height"] = height
+        
+        assets.append(asset)
+    
+    return assets
+
+
+def create_post(api_key, channel_id, text, image_urls, scheduled_at=None, local_image_paths=None):
     input_fields = {
         "text": text,
         "channelId": channel_id,
-        "assets": build_assets(image_urls),
+        "assets": build_assets(image_urls, local_image_paths),
         "metadata": {"facebook": {"type": "post"}},
     }
     if scheduled_at:
@@ -149,6 +206,12 @@ def main():
     PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
     any_failed = False
 
+    # Log PIL availability
+    if HAS_PIL:
+        log_summary("✓ PIL available - image dimensions will be extracted\n")
+    else:
+        log_summary("⚠ PIL not available - image dimensions will not be extracted\n")
+
     for post_dir in post_dirs:
         manifest_path = post_dir / "publish.json"
         if not manifest_path.exists():
@@ -164,12 +227,28 @@ def main():
             raw_url(repo, ref, f"{post_dir.as_posix()}/{fn}")
             for fn in image_filenames
         ]
+        # Build local image paths for dimension extraction
+        local_image_paths = [
+            (post_dir / fn).as_posix()
+            for fn in image_filenames
+        ]
 
         log_summary(f"## Publishing `{post_dir.name}` to {len(channel_ids)} channel(s)")
         log_summary(f"Image URLs: {image_urls}")
+        
+        # Log dimensions if available
+        if HAS_PIL:
+            dims_info = []
+            for path in local_image_paths:
+                dims = get_image_dimensions(path)
+                if dims:
+                    dims_info.append(f"{Path(path).name}: {dims[0]}x{dims[1]}")
+            if dims_info:
+                log_summary(f"Image dimensions: {', '.join(dims_info)}")
+        
         all_ok = True
         for channel_id in channel_ids:
-            ok, result = create_post(api_key, channel_id, text, image_urls, scheduled_at)
+            ok, result = create_post(api_key, channel_id, text, image_urls, scheduled_at, local_image_paths)
             if ok:
                 log_summary(
                     f"OK channel={channel_id} post_id={result.get('id')} "
