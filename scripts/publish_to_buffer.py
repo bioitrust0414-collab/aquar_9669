@@ -204,10 +204,16 @@ def main():
         print("No pending posts found.")
         return
 
-    # 在排程模式下，只發布第一篇
+    # 在排程模式下，只發布 aquar-023 及之後的議題（跳過已排程的 aquar-001～022）
     if publish_mode == "scheduled":
-        post_dirs = post_dirs[:1]
-        log_summary(f"[SCHEDULED MODE] Publishing 1 pending post")
+        # 篩選出 aquar-023 及之後的議題
+        filtered_dirs = [d for d in post_dirs if any(f"aquar-{i:03d}" in d.name for i in range(23, 100))]
+        if filtered_dirs:
+            post_dirs = filtered_dirs[:1]  # 每次只發布一篇
+            log_summary(f"[SCHEDULED MODE] Publishing 1 pending post (aquar-023+)")
+        else:
+            log_summary(f"[SCHEDULED MODE] No aquar-023+ posts found. All scheduled posts are complete.")
+            return
     else:
         log_summary(f"[PUSH MODE] Publishing all {len(post_dirs)} pending post(s)")
 
