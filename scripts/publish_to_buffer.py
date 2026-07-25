@@ -142,7 +142,7 @@ def create_post(api_key, channel_id, text, image_urls, scheduled_at=None, local_
         "text": text,
         "channelId": channel_id,
         "assets": build_assets(image_urls, local_image_paths),
-        "metadata": {"facebook": {"type": "post"}},
+
     }
     if scheduled_at:
         input_fields["schedulingType"] = "automatic"
