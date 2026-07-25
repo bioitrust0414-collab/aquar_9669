@@ -193,6 +193,7 @@ def main():
     channel_ids = json.loads(get_env_or_die("BUFFER_CHANNEL_IDS"))
     repo = get_env_or_die("GITHUB_REPOSITORY")
     ref = get_env_or_die("GITHUB_REF_NAME")
+    publish_mode = os.environ.get("PUBLISH_MODE", "all")  # 'scheduled' or 'all'
 
     if not PENDING_DIR.exists():
         print("No pending directory found, nothing to do.")
@@ -202,6 +203,13 @@ def main():
     if not post_dirs:
         print("No pending posts found.")
         return
+
+    # 在排程模式下，只發布第一篇
+    if publish_mode == "scheduled":
+        post_dirs = post_dirs[:1]
+        log_summary(f"[SCHEDULED MODE] Publishing 1 pending post")
+    else:
+        log_summary(f"[PUSH MODE] Publishing all {len(post_dirs)} pending post(s)")
 
     PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
     any_failed = False
