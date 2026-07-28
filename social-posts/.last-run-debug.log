@@ -2099,3 +2099,16 @@ FAILED channel=6a605f5ee2638b94d7b1e3fe: HTTP 429: {"errors":[{"message":"Too ma
 
 Left example-post in pending/ (will retry next push)
 
+[SCHEDULED MODE] Publishing 1 pending post (aquar-023+)
+
+⚠ PIL not available - image dimensions will not be extracted
+
+
+## Publishing `aquar-023-kepu-3.5-future-trend` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-023-kepu-3.5-future-trend/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-023-kepu-3.5-future-trend/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-023-kepu-3.5-future-trend/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-023-kepu-3.5-future-trend/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-023-kepu-3.5-future-trend/card-5.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Invalid post: Facebook posts require a type (post, story, or reel).
+
+Left aquar-023-kepu-3.5-future-trend in pending/ (will retry next push)
+
