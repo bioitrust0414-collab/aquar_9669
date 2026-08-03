@@ -6,7 +6,7 @@ plan:
   source_commit: 4e7104b690534c1909b9cb4db1b4ad976196472c
   timezone: Asia/Taipei
   mode: sequence_only
-  publishing_enabled: false
+  publishing_enabled: true
   review_required: true
   timing:
     cadence: null
