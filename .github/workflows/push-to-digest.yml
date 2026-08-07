@@ -1,19 +1,14 @@
-- name: Debug - verify token type
-  env:
-    DIGEST_REPO_TOKEN: ${{ secrets.DIGEST_REPO_TOKEN }}
+- name: Commit updated push state
+  if: always()
   run: |
-    # 測試 token 是否能讀取目標倉庫
-    echo "=== Testing token against aquar-digest ==="
-    curl -s -o /dev/null -w "%{http_code}" \
-      -H "Authorization: Bearer $DIGEST_REPO_TOKEN" \
-      -H "Accept: application/vnd.github+json" \
-      "https://api.github.com/repos/bioitrust0414-collab/aquar-digest"
-    echo " (should be 200)"
-
-    # 測試 token 是否能寫入（用 GET 模擬，看 X-OAuth-Scopes header）
-    echo "=== Token scopes ==="
-    curl -s -I \
-      -H "Authorization: Bearer $DIGEST_REPO_TOKEN" \
-      -H "Accept: application/vnd.github+json" \
-      "https://api.github.com/repos/bioitrust0414-collab/aquar-digest/contents/README.md" \
-      | grep -i "x-oauth-scopes\|x-accepted-oauth-scopes\|status"
+    git config user.name "github-actions[bot]"
+    git config user.email "github-actions[bot]@users.noreply.github.com"
+    # 確保檔案存在再 add
+    if [ -f docs/digest-push-state.json ]; then
+      git add docs/digest-push-state.json
+      git diff --cached --quiet || git commit -m "Advance digest push state [skip ci]"
+      git pull --rebase origin ${{ github.ref_name }}
+      git push
+    else
+      echo "No state file to commit"
+    fi
