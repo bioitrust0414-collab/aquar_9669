@@ -2,11 +2,10 @@ def main():
     token = get_env_or_die("DIGEST_REPO_TOKEN")
     push_count = int(os.environ.get("PUSH_COUNT", "2"))
 
-    # ✅ 新增：確保 state 檔案在腳本開始前就存在
+    # ✅ 確保 state 檔案一開始就存在
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     if not STATE_PATH.exists():
         STATE_PATH.write_text('{"last_pushed_index":0}', encoding="utf-8")
-        print("Created initial state file")
 
     v3_order = load_v3_order()
     if not v3_order:
@@ -40,9 +39,8 @@ def main():
             push_images_manifest(token, entry["topic_folder"], entry.get("images_present", []))
             pushed += 1
         except RuntimeError as e:
-            print(f"ERROR: Failed to push #{num}: {e}")
-            # 不拋出異常，讓後續 item 和 state 寫入繼續
-            break
+            print(f"ERROR: {e}")
+            break  # 遇到錯誤就停止，但後面的 state 寫入仍會執行
 
     state["last_pushed_index"] = start + pushed
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
