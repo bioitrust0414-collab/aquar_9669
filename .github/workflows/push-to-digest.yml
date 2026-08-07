@@ -23,6 +23,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Debug - check if secret is set
+        env:
+          DIGEST_REPO_TOKEN: ${{ secrets.DIGEST_REPO_TOKEN }}
+        run: |
+          if [ -z "$DIGEST_REPO_TOKEN" ]; then
+            echo "❌ DIGEST_REPO_TOKEN is EMPTY or not set"
+          else
+            echo "✅ DIGEST_REPO_TOKEN is set (length: ${#DIGEST_REPO_TOKEN} chars)"
+          fi
+
       - name: Push next pieces to aquar-digest
         env:
           DIGEST_REPO_TOKEN: ${{ secrets.DIGEST_REPO_TOKEN }}
