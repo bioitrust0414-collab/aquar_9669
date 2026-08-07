@@ -25,7 +25,7 @@ import shutil
 import sys
 import traceback
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 import requests
 
@@ -238,6 +238,10 @@ def main():
             log_summary(f"FAILED channel={channel_id}: {result}")
 
     if all_ok:
+        manifest["published_at"] = datetime.now(timezone.utc).isoformat()
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
         dest = PUBLISHED_DIR / post_dir.name
         shutil.move(str(post_dir), str(dest))
         log_summary(f"Moved {post_dir.name} -> {dest}")

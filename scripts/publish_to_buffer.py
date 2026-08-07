@@ -30,6 +30,7 @@ import os
 import shutil
 import sys
 import traceback
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -142,7 +143,7 @@ def create_post(api_key, channel_id, text, image_urls, scheduled_at=None, local_
         "text": text,
         "channelId": channel_id,
         "assets": build_assets(image_urls, local_image_paths),
-
+        "metadata": {"facebook": {"type": "post"}},
     }
     if scheduled_at:
         input_fields["schedulingType"] = "automatic"
@@ -267,6 +268,10 @@ def main():
                 log_summary(f"FAILED channel={channel_id}: {result}")
 
         if all_ok:
+            manifest["published_at"] = datetime.now(timezone.utc).isoformat()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
             dest = PUBLISHED_DIR / post_dir.name
             shutil.move(str(post_dir), str(dest))
             log_summary(f"Moved {post_dir.name} -> {dest}")
