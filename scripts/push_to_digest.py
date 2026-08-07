@@ -154,6 +154,12 @@ def main():
     if STATE_PATH.exists():
         state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
 
+    # Write the state file immediately so it always exists on disk, even if
+    # a later API call fails partway through — otherwise the "Commit updated
+    # push state" workflow step has nothing to git add and errors out too.
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+
     start = state["last_pushed_index"]
     batch = v3_order[start:start + push_count]
     if not batch:
@@ -175,7 +181,6 @@ def main():
         pushed += 1
 
     state["last_pushed_index"] = start + len(batch)
-    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Synced {pushed} piece(s). last_pushed_index={state['last_pushed_index']}")
 
