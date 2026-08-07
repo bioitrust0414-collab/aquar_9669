@@ -1,50 +1,19 @@
-name: Push to Aquar Digest
+- name: Debug - verify token type
+  env:
+    DIGEST_REPO_TOKEN: ${{ secrets.DIGEST_REPO_TOKEN }}
+  run: |
+    # 測試 token 是否能讀取目標倉庫
+    echo "=== Testing token against aquar-digest ==="
+    curl -s -o /dev/null -w "%{http_code}" \
+      -H "Authorization: Bearer $DIGEST_REPO_TOKEN" \
+      -H "Accept: application/vnd.github+json" \
+      "https://api.github.com/repos/bioitrust0414-collab/aquar-digest"
+    echo " (should be 200)"
 
-on:
-  schedule:
-    # 每週二、五 00:20 UTC（台北時間 08:20），與 Buffer 排程錯開
-    - cron: '20 0 * * 2,5'
-  workflow_dispatch:  # 允許手動觸發
-
-jobs:
-  push:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Debug - check if secret is set
-        env:
-          DIGEST_REPO_TOKEN: ${{ secrets.DIGEST_REPO_TOKEN }}
-        run: |
-          if [ -z "$DIGEST_REPO_TOKEN" ]; then
-            echo "❌ DIGEST_REPO_TOKEN is EMPTY or not set"
-          else
-            echo "✅ DIGEST_REPO_TOKEN is set (length: ${#DIGEST_REPO_TOKEN} chars)"
-          fi
-
-      - name: Push next pieces to aquar-digest
-        env:
-          DIGEST_REPO_TOKEN: ${{ secrets.DIGEST_REPO_TOKEN }}
-          PUSH_COUNT: '2'
-        run: python scripts/push_to_digest.py
-
-      - name: Commit updated push state
-        if: always()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/digest-push-state.json
-          git diff --cached --quiet || git commit -m "Advance digest push state [skip ci]"
-          git pull --rebase origin ${{ github.ref_name }}
-          git push
+    # 測試 token 是否能寫入（用 GET 模擬，看 X-OAuth-Scopes header）
+    echo "=== Token scopes ==="
+    curl -s -I \
+      -H "Authorization: Bearer $DIGEST_REPO_TOKEN" \
+      -H "Accept: application/vnd.github+json" \
+      "https://api.github.com/repos/bioitrust0414-collab/aquar-digest/contents/README.md" \
+      | grep -i "x-oauth-scopes\|x-accepted-oauth-scopes\|status"
