@@ -3,7 +3,6 @@
   run: |
     git config user.name "github-actions[bot]"
     git config user.email "github-actions[bot]@users.noreply.github.com"
-    # 確保檔案存在再 add
     if [ -f docs/digest-push-state.json ]; then
       git add docs/digest-push-state.json
       git diff --cached --quiet || git commit -m "Advance digest push state [skip ci]"
