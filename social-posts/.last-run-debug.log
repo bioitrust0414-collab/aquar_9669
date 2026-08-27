@@ -2369,3 +2369,21 @@ FAILED channel=6a605f5ee2638b94d7b1e3fe: HTTP 401: {"errors":[{"message":"Access
 
 Left aquar-001-microbiome-dynamics in pending/ (will retry next push)
 
+[SCHEDULED MODE] Publishing 1 pending post: aquar-001-microbiome-dynamics
+
+⚠ PIL not available - image dimensions will not be extracted
+
+
+## Publishing `aquar-001-microbiome-dynamics` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-001-microbiome-dynamics/hook.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-001-microbiome-dynamics/transition.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-001-microbiome-dynamics/data.jpg']
+
+### Buffer HTTP 401 for channel 6a605f5ee2638b94d7b1e3fe
+```
+{"errors":[{"message":"Access token is not valid","extensions":{"code":"UNAUTHENTICATED"}}]}
+```
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: HTTP 401: {"errors":[{"message":"Access token is not valid","extensions":{"code":"UNAUTHENTICATED"}}]}
+
+Left aquar-001-microbiome-dynamics in pending/ (will retry next push)
+
