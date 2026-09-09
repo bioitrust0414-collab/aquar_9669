@@ -2508,3 +2508,16 @@ OK channel=6a605f5ee2638b94d7b1e3fe post_id=6a9f90ed5b3dd39bb3a3df44 status=sche
 
 Moved aquar-001-microbiome-dynamics -> social-posts/published/aquar-001-microbiome-dynamics
 
+[SCHEDULED MODE] Publishing 1 pending post: aquar-002-kepu-1.1-good-bad-bacteria
+
+⚠ PIL not available - image dimensions will not be extracted
+
+
+## Publishing `aquar-002-kepu-1.1-good-bad-bacteria` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-5.jpg']
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: Scheduled time must be in the future
+
+Left aquar-002-kepu-1.1-good-bad-bacteria in pending/ (will retry next push)
+
