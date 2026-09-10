@@ -3827,3 +3827,21 @@ FAILED channel=6a605f5ee2638b94d7b1e3fe: HTTP 429: {"errors":[{"message":"Too ma
 
 Left aquar-059-investment-mockup-a in pending/ (will retry next push)
 
+[SCHEDULED MODE] Publishing 1 pending post: aquar-002-kepu-1.1-good-bad-bacteria
+
+⚠ PIL not available - image dimensions will not be extracted
+
+
+## Publishing `aquar-002-kepu-1.1-good-bad-bacteria` to 1 channel(s)
+
+Image URLs: ['https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-1.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-2.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-3.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-4.jpg', 'https://raw.githubusercontent.com/bioitrust0414-collab/aquar_9669/main/social-posts/pending/aquar-002-kepu-1.1-good-bad-bacteria/card-5.jpg']
+
+### Buffer HTTP 429 for channel 6a605f5ee2638b94d7b1e3fe
+```
+{"errors":[{"message":"Too many requests from this client. Please try again later.","extensions":{"code":"RATE_LIMIT_EXCEEDED","window":"15m"}}]}
+```
+
+FAILED channel=6a605f5ee2638b94d7b1e3fe: HTTP 429: {"errors":[{"message":"Too many requests from this client. Please try again later.","extensions":{"code":"RATE_LIMIT_EXCEEDED","window":"15m"}}]}
+
+Left aquar-002-kepu-1.1-good-bad-bacteria in pending/ (will retry next push)
+
