@@ -16,6 +16,16 @@ IMPROVEMENT: This version extracts image dimensions from local files
 before publishing, ensuring Buffer can properly display image previews
 and metadata.
 
+Scheduled mode (PUBLISH_MODE=scheduled) runs a 21-day batch cycle: the
+workflow's cron fires daily, but this script only actually dispatches a
+batch once BATCH_INTERVAL_DAYS have elapsed since the last one (tracked
+in BATCH_STATE_PATH) - otherwise it's a no-op. When a batch is due, it
+takes the next BATCH_SIZE pending posts and assigns each an evenly
+spread scheduled_at across the batch window, so Buffer releases them
+gradually instead of this script creating BATCH_SIZE posts back-to-back
+against Buffer's own rate limit. FORCE_BATCH=true (set for
+workflow_dispatch) skips the day-count wait and dispatches immediately.
+
 Required env vars:
   BUFFER_API_KEY      - personal API key from Buffer (Bearer token, NOT
                          the old OAuth "access_token")
@@ -30,7 +40,7 @@ import os
 import shutil
 import sys
 import traceback
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -61,6 +71,10 @@ BUFFER_API_URL = "https://api.buffer.com"
 PENDING_DIR = Path("social-posts/pending")
 PUBLISHED_DIR = Path("social-posts/published")
 
+BATCH_STATE_PATH = Path("docs/buffer-batch-state.json")
+BATCH_INTERVAL_DAYS = 21
+BATCH_SIZE = 10
+
 CREATE_POST_MUTATION = """
 mutation CreatePost($input: CreatePostInput!) {
   createPost(input: $input) {
@@ -85,6 +99,25 @@ def get_env_or_die(name):
 
 def raw_url(repo, ref, path):
     return f"https://raw.githubusercontent.com/{repo}/{ref}/{path}"
+
+
+def load_batch_state():
+    if BATCH_STATE_PATH.exists():
+        return json.loads(BATCH_STATE_PATH.read_text(encoding="utf-8"))
+    return {"last_batch_at": None}
+
+
+def save_batch_state(state):
+    BATCH_STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    BATCH_STATE_PATH.write_text(
+        json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
+def spread_scheduled_times(count, start):
+    """Evenly spread `count` datetimes across the BATCH_INTERVAL_DAYS window starting at `start`."""
+    spacing = timedelta(days=BATCH_INTERVAL_DAYS / count)
+    return [start + spacing * i for i in range(count)]
 
 
 def get_image_dimensions(file_path):
@@ -195,6 +228,7 @@ def main():
     repo = get_env_or_die("GITHUB_REPOSITORY")
     ref = get_env_or_die("GITHUB_REF_NAME")
     publish_mode = os.environ.get("PUBLISH_MODE", "all")  # 'scheduled' or 'all'
+    force_batch = os.environ.get("FORCE_BATCH", "false").lower() == "true"
 
     if not PENDING_DIR.exists():
         print("No pending directory found, nothing to do.")
@@ -205,15 +239,53 @@ def main():
         print("No pending posts found.")
         return
 
-    # 在排程模式下，每次只發布 pending 資料夾中的第一篇（動態讀取，不硬編碼起始點）
+    now = datetime.now(timezone.utc)
+
     if publish_mode == "scheduled":
-        post_dirs = post_dirs[:1]  # 每次只發布第一篇
-        log_summary(f"[SCHEDULED MODE] Publishing 1 pending post: {post_dirs[0].name}")
+        state = load_batch_state()
+        last_batch_at = state.get("last_batch_at")
+
+        if last_batch_at is None:
+            reason = "first run"
+        elif force_batch:
+            reason = "forced via workflow_dispatch"
+        else:
+            days_elapsed = (now - datetime.fromisoformat(last_batch_at)).total_seconds() / 86400
+            if days_elapsed < BATCH_INTERVAL_DAYS:
+                log_summary(
+                    f"[SCHEDULED MODE] {days_elapsed:.1f} of {BATCH_INTERVAL_DAYS} days elapsed "
+                    f"since last batch ({last_batch_at}); not due yet, skipping."
+                )
+                return
+            reason = f"{days_elapsed:.1f} days elapsed since last batch"
+
+        post_dirs = post_dirs[:BATCH_SIZE]
+
+        # Assign each post in the batch an evenly spread scheduled_at instead
+        # of creating BATCH_SIZE posts back-to-back (that burst is what
+        # tripped Buffer's per-client rate limit in push mode before).
+        # Buffer then releases them gradually on its own schedule.
+        scheduled_times = spread_scheduled_times(len(post_dirs), now + timedelta(minutes=5))
+        for post_dir, sched in zip(post_dirs, scheduled_times):
+            manifest_path = post_dir / "publish.json"
+            if not manifest_path.exists():
+                continue
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["scheduled_at"] = sched.strftime("%Y-%m-%dT%H:%M:%SZ")
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+
+        log_summary(
+            f"[SCHEDULED MODE] Batch due ({reason}). Dispatching {len(post_dirs)} post(s), "
+            f"spread across the next {BATCH_INTERVAL_DAYS} days: {[d.name for d in post_dirs]}"
+        )
     else:
         log_summary(f"[PUSH MODE] Publishing all {len(post_dirs)} pending post(s)")
 
     PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
     any_failed = False
+    published_count = 0
 
     # Log PIL availability
     if HAS_PIL:
@@ -275,9 +347,23 @@ def main():
             dest = PUBLISHED_DIR / post_dir.name
             shutil.move(str(post_dir), str(dest))
             log_summary(f"Moved {post_dir.name} -> {dest}")
+            published_count += 1
         else:
             any_failed = True
             log_summary(f"Left {post_dir.name} in pending/ (will retry next push)")
+
+    if publish_mode == "scheduled":
+        if published_count > 0:
+            save_batch_state({"last_batch_at": now.strftime("%Y-%m-%dT%H:%M:%SZ")})
+            log_summary(
+                f"[SCHEDULED MODE] {published_count}/{len(post_dirs)} post(s) in this batch "
+                f"succeeded; batch state advanced, next batch due in {BATCH_INTERVAL_DAYS} days."
+            )
+        else:
+            log_summary(
+                "[SCHEDULED MODE] No posts in this batch succeeded; batch state NOT advanced, "
+                "will retry the whole batch on the next scheduled run."
+            )
 
     if any_failed:
         sys.exit(1)

@@ -34,7 +34,7 @@
 | 圖卡總數 | 約 240 張（每子主題 5 張） |
 | 待發布貼文 | 60 篇（`social-posts/pending/`） |
 | 已發布貼文 | 60 篇（`social-posts/published/`） |
-| 預計完整發布週期 | 約 19.7 週（每週 3 篇） |
+| 預計完整發布週期 | 約 17.7 週（每 21 天一批，一批 10 篇） |
 
 > **注意**：`social-posts/published/` 中的貼文代表已成功移動到已發布資料夾，但**不代表全部已成功發布到 Buffer**。請以 Buffer 後台的實際發布數量為準。
 
@@ -111,57 +111,27 @@ aquar_9669/
 
 | 觸發方式 | 條件 | 發布數量 | 適用場景 |
 |---------|------|---------|---------|
-| **Push 觸發** | 有新檔案 push 到 `social-posts/pending/**` | **全部** pending 貼文 | 緊急或批次發布 |
-| **排程觸發** | 每週一、三、五 00:05 UTC（台北 08:05） | 每次 **1 篇** | 穩定節奏的自動發布 |
-| **手動觸發** | GitHub Actions → Run workflow | **全部** pending 貼文 | 手動補發或測試 |
+| **Push 觸發** | 有新檔案 push 到 `main` 分支的 `social-posts/pending/**` | **全部** pending 貼文 | 緊急或批次發布 |
+| **排程觸發** | 每天 00:05 UTC 檢查一次，若距上次批次已滿 21 天則觸發 | 一批 **10 篇**（不足 10 篇時發剩餘全部） | 穩定節奏的批次自動發布 |
+| **手動觸發** | GitHub Actions → Run workflow | 立即觸發一批 10 篇（略過 21 天等待） | 手動補發、測試，或提前開始下一批 |
 
-> ⚠️ **重要**：Push 觸發模式會一次發布**所有** pending 資料夾中的貼文，容易造成社群媒體洗版。請謹慎使用。
+> ⚠️ **重要**：Push 觸發模式會一次發布**所有** pending 資料夾中的貼文，容易造成社群媒體洗版，請謹慎使用。此觸發僅限 `main` 分支（其他分支的 push 不會觸發）。
 
-### 發布腳本邏輯
+### 發布腳本邏輯：21 天批次制
 
-排程模式下，腳本目前**硬編碼**為只發布 `aquar-023` 及之後的議題：
+`scripts/publish_to_buffer.py` 在排程模式下維護一個狀態檔 `docs/buffer-batch-state.json`（記錄 `last_batch_at`），每天執行時計算距離上次批次是否已滿 21 天：
 
-```python
-# 在排程模式下，只發布 aquar-023 及之後的議題（跳過已排程的 aquar-001～022）
-filtered_dirs = [d for d in post_dirs if any(f"aquar-{i:03d}" in d.name for i in range(23, 100))]
-if filtered_dirs:
-    post_dirs = filtered_dirs[:1]  # 每次只發布一篇
-```
+- **未滿 21 天**：不做任何事，直接結束（避免每天都重覆判斷造成混淆，log 會標示還差幾天）。
+- **已滿 21 天（或第一次執行、或手動觸發強制略過等待）**：從 `pending/` 依資料夾名稱排序取出接下來 **10 篇**，各自指定一個在未來 21 天內平均分散的發布時間（`scheduled_at`），一次性交給 Buffer 的排程功能（`customScheduled` 模式），由 Buffer 自己在指定時間陸續真正發文——腳本本身不會短時間內對 Buffer 連續打 10 次「立即發布」的請求，避免撞到 Buffer 的速率限制。
+- 這批 10 篇只要有 **至少 1 篇** 成功送進 Buffer，就會把 `last_batch_at` 更新為本次執行時間，21 天倒數重新開始；如果整批 10 篇全部失敗（例如 Buffer 短暫中斷），則不更新狀態，隔天會自動整批重試。
 
-這意味著 `aquar-001` 到 `aquar-022` 在排程模式下**不會被發布**，只能透過 Push 或手動觸發。
+58 篇核心內容 ÷ 10 篇/批 ≈ 6 批，每批間隔 21 天，完整跑完（含最後一批的分散發文）約 124 天（約 17.7 週 / 4.1 個月）。
 
 ---
 
 ## ⚠️ 已知問題與待修正事項
 
-### 問題 1：排程配置標記為禁用
-
-`docs/publish-schedule-v3-frequency.yaml` 中設定了：
-
-```yaml
-publishing_enabled: false
-```
-
-這個欄位目前**不影響** GitHub Actions 的實際執行（GitHub Actions 的觸發由 `.github/workflows/publish-social.yml` 控制），但代表排程策略尚未正式確認。建議確認發布策略後，將此欄位改為 `true` 以反映實際狀態。
-
-### 問題 2：排程模式的硬編碼起始點
-
-`scripts/publish_to_buffer.py` 中的排程模式硬編碼從 `aquar-023` 開始，`aquar-001` 到 `aquar-022` 只能透過 Push 觸發發布。
-
-**建議修改**：改為動態讀取 pending 資料夾中的第一篇：
-
-```python
-# 建議改為：
-if publish_mode == "scheduled":
-    if post_dirs:
-        post_dirs = post_dirs[:1]  # 每次只發布第一篇（動態，不硬編碼）
-```
-
-### 問題 3：Push 觸發會一次發布所有貼文
-
-Push 模式會發布 pending 資料夾中的**所有**貼文，容易造成社群媒體洗版。建議評估是否需要限制 Push 模式的發布數量，或改為只在手動觸發時才批次發布。
-
-### 問題 4：published/ 資料夾與 Buffer 實際發布數量不一致
+### 問題 1：published/ 資料夾與 Buffer 實際發布數量不一致
 
 `social-posts/published/` 中有 60 篇，但 Buffer 後台顯示的數量可能不同。這是因為腳本在發布成功後才移動資料夾，但 Buffer 的排程佇列與實際發布時間不同。**請以 Buffer 後台為準**。
 
@@ -227,19 +197,23 @@ Push 到 GitHub 後，GitHub Actions 會自動觸發並發布所有 pending 貼�
 |------|------|------|------|
 | `publish-schedule.json` | v1 | 依話題編號 1→10 依序發布 | 參考用 |
 | `publish-schedule-v2.json` | v2 | 行銷漏斗邏輯（破題→痛點→科學→差異化→生活→長期） | 參考用 |
-| `publish-schedule-v3-frequency.yaml` | v3（當前） | 頻率優先輪替制（每輪各話題各出一篇） | ⚠️ `publishing_enabled: false` |
+| `publish-schedule-v3-frequency.yaml` | v3（當前） | 頻率優先輪替制（每輪各話題各出一篇） | `publishing_enabled: true`（規劃參考，實際發布順序由 `pending/` 資料夾名稱排序決定，程式不會讀取此檔） |
 
-**v3 排程的發布節奏：**
-- 每週 3 篇（週一、三、五），58 篇核心內容約 19.3 週（約 4.5 個月）發完
-- 前 26 篇（約 8.7 週）為 `phase_1`，其餘為 `phase_2`
+**實際排程節奏（由 `scripts/publish_to_buffer.py` 控制，非此處的 v3 檔案）：**
+- 每 21 天一批，一批 10 篇，58 篇核心內容約 6 批、124 天（約 17.7 週 / 4.1 個月）發完
+- 前 26 篇約 3 批、60 天（約 8.6 週）
 
-**修改排程時間（`publish-social.yml`）：**
+**修改批次參數（`scripts/publish_to_buffer.py`）：**
+```python
+BATCH_INTERVAL_DAYS = 21  # 幾天一批
+BATCH_SIZE = 10           # 一批幾篇
+```
+
+**修改每日檢查時間（`publish-social.yml`）：**
 ```yaml
 schedule:
-  # 目前：每週一、三、五 UTC 00:05（台北 08:05）
-  - cron: '5 0 * * 1,3,5'
-  # 範例：每天 UTC 00:00（台北 08:00）
-  # - cron: '0 0 * * *'
+  # 目前：每天 UTC 00:05（台北 08:05）檢查一次是否該觸發批次
+  - cron: '5 0 * * *'
 ```
 
 ---
@@ -258,8 +232,8 @@ schedule:
 **貼文卡在 pending**
 查看 `social-posts/.last-run-debug.log` 確認錯誤原因，修復後手動觸發重新發布。
 
-**排程模式無法發布 aquar-001 到 aquar-022**
-這是腳本的已知限制（硬編碼從 aquar-023 開始），需手動觸發或 Push 觸發才能發布這些貼文。詳見[已知問題](#️-已知問題與待修正事項)。
+**排程模式一直沒有動作**
+檢查 `docs/buffer-batch-state.json` 的 `last_batch_at`：只要距離現在不滿 21 天就是正常現象（每天執行的 log 會標示還差幾天）。若要立即觸發下一批，不想等 21 天，可手動執行 GitHub Actions（`workflow_dispatch` 會略過等待直接發一批）。
 
 ---
 
