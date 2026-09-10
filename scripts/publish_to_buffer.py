@@ -74,6 +74,7 @@ PUBLISHED_DIR = Path("social-posts/published")
 BATCH_STATE_PATH = Path("docs/buffer-batch-state.json")
 BATCH_INTERVAL_DAYS = 21
 BATCH_SIZE = 10
+BATCH_FIRST_POST_LEAD_DAYS = 1  # first post of a batch goes live 1 day after dispatch
 
 CREATE_POST_MUTATION = """
 mutation CreatePost($input: CreatePostInput!) {
@@ -265,7 +266,9 @@ def main():
         # of creating BATCH_SIZE posts back-to-back (that burst is what
         # tripped Buffer's per-client rate limit in push mode before).
         # Buffer then releases them gradually on its own schedule.
-        scheduled_times = spread_scheduled_times(len(post_dirs), now + timedelta(minutes=5))
+        scheduled_times = spread_scheduled_times(
+            len(post_dirs), now + timedelta(days=BATCH_FIRST_POST_LEAD_DAYS)
+        )
         for post_dir, sched in zip(post_dirs, scheduled_times):
             manifest_path = post_dir / "publish.json"
             if not manifest_path.exists():
