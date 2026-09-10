@@ -13,13 +13,14 @@ plan:
     start_at: null
   order_basis:
   - 發文頻率/節奏優先：以固定節奏輪流覆蓋各話題，避免同一話題連續出現，不刷存在感
-  cadence_assumption: 每週 3 篇（週一、三、五，僅供試算週期，不寫入單篇資料）
-  estimated_duration_weeks: 19.67
-  note: 以每週 3 篇（週一、三、五）試算，58 篇核心內容加 1 篇延伸共 59 篇，完整跑完約需 19.67 週（約 4.5 個月）。確認採用完整時間軸：前約 2 個月（約 8.7
+  cadence_assumption: 每 21 天一批，一批 10 篇（由 scripts/publish_to_buffer.py 的 docs/buffer-batch-state.json
+    實際控制，此處僅供試算週期，不寫入單篇資料）
+  estimated_duration_weeks: 17.71
+  note: 以每 21 天一批、一批 10 篇試算，58 篇核心內容加 1 篇延伸共 59 篇，完整跑完約需 124 天（約 17.71 週，約 4.1 個月）。確認採用完整時間軸：前約 2 個月（約 8.6
     週、26 篇）列為 phase_1_first_2_months，其餘列為 phase_2_extension，之後接續發布。仍為 sequence_only
     模式，不綁定實際週次或月份，只是用 phase 標記「第一批」跟「後續」的分界，供規劃參考。
   phase_1_item_count: 26
-  estimated_total_duration_weeks: 19.67
+  estimated_total_duration_weeks: 17.71
   known_content_gaps:
   - topic: topic-09-selective-rights
     gap: 缺第 5 個子議題（矩陣原題：身體的資產：妳的身體是妳最珍覺的資產，值得最極致的呵護）。素材 archive/topic10-unused-concept-draft/investment-mockup-a
@@ -39,4 +40,4 @@ counts:
     ready_with_accepted_gap: 2
     ready: 56
     needs_adaptation: 1
-  phase_1_duration_weeks: 6.5
+  phase_1_duration_weeks: 8.57
