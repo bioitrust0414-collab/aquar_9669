@@ -2,6 +2,8 @@ name: Publish to Social Media
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'social-posts/pending/**'
   schedule:
