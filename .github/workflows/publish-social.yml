@@ -9,9 +9,16 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    
+    # 關鍵：賦予 GitHub Actions 對倉庫內容的寫入權限，解決 git push 權限不足 (Exit code 128)
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
