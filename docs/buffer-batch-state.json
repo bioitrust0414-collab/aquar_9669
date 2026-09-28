@@ -1,3 +1,37 @@
 {
-  "last_batch_at": "2026-09-06T00:05:00Z"
+  "last_batch_at": "2026-09-27T23:31:57Z",
+  "last_slot_date": "2026-10-16",
+  "queued": [
+    "aquar-001-microbiome-dynamics",
+    "aquar-002-kepu-1.1-good-bad-bacteria",
+    "aquar-003-kepu-1.2-sterile-myth",
+    "aquar-004-kepu-1.3-molecular-permeation",
+    "aquar-005-kepu-1.4-daily-habits",
+    "aquar-006-ph-boundary",
+    "aquar-007-kepu-2.1-what-is-ph",
+    "aquar-008-kepu-2.2-golden-ratio-ph45",
+    "aquar-009-kepu-2.3-recognizing-imbalance",
+    "aquar-010-kepu-2.4-gentle-product-choice",
+    "aquar-011-kepu-2.5-guarding-boundaries",
+    "aquar-012-barrier-repair",
+    "aquar-013-kepu-6.1-barrier",
+    "aquar-014-kepu-6.2-less-is-more",
+    "aquar-015-kepu-6.3-let-body-speak",
+    "aquar-016-kepu-6.4-self-healing",
+    "aquar-017-kepu-6.5-patience-in-repair",
+    "aquar-018-molecular-permeation",
+    "aquar-019-kepu-3.1-absorption-molecular-size",
+    "aquar-020-kepu-3.2-art-of-penetration",
+    "aquar-021-kepu-3.3-absorption",
+    "aquar-022-kepu-3.4-personalized-formula",
+    "aquar-023-kepu-3.5-future-trend",
+    "aquar-024-ingredient-purity",
+    "aquar-025-kepu-5.1-label-reading",
+    "aquar-026-kepu-5.2-minimalist-trend",
+    "aquar-027-kepu-5.3-ingredients-to-avoid",
+    "aquar-028-kepu-5.4-smart-consumer",
+    "aquar-029-kepu-5.5-discipline",
+    "aquar-030-topic-08-data-vs-emotion",
+    "aquar-031-kepu-8.1-meaning-of-data"
+  ]
 }
