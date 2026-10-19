@@ -1,6 +1,6 @@
 {
-  "last_batch_at": "2026-09-27T23:31:57Z",
-  "last_slot_date": "2026-10-16",
+  "last_batch_at": "2026-10-19T01:36:25Z",
+  "last_slot_date": "2026-11-09",
   "queued": [
     "aquar-001-microbiome-dynamics",
     "aquar-002-kepu-1.1-good-bad-bacteria",
@@ -32,6 +32,15 @@
     "aquar-028-kepu-5.4-smart-consumer",
     "aquar-029-kepu-5.5-discipline",
     "aquar-030-topic-08-data-vs-emotion",
-    "aquar-031-kepu-8.1-meaning-of-data"
+    "aquar-031-kepu-8.1-meaning-of-data",
+    "aquar-032-kepu-8.2-body-signals-as-data",
+    "aquar-033-kepu-8.3-gentle-science",
+    "aquar-034-kepu-8.4-data-as-tool",
+    "aquar-035-kepu-8.5-transparency",
+    "aquar-036-topic-09-selective-rights",
+    "aquar-037-kepu-9.1-quality-life",
+    "aquar-038-kepu-9.2-market-reality",
+    "aquar-039-kepu-9.3-autonomy",
+    "aquar-040-kepu-9.4-freedom-to-choose"
   ]
 }
