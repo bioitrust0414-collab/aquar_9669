@@ -4,7 +4,7 @@
 [![Repository Size](https://img.shields.io/github/repo-size/bioitrust0414-collab/aquar_9669)](https://github.com/bioitrust0414-collab/aquar_9669)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> 一個為 **Aquar 69 Lab** 女性健康科普品牌設計的內容管理與社群媒體自動發布系統。透過 GitHub + Buffer API，實現從內容製作、排程規劃到自動發布 Facebook 與 Instagram 的完整工作流程。
+> 一個為 **Aquar 69 Lab** 女性健康科普品牌設計的內容管理與社群媒體自動發布系統。透過 GitHub Actions 與 Buffer 的整合，管理內容、排程規劃及 Facebook／Instagram 社群發布流程。
 
 ---
 
@@ -141,19 +141,7 @@ aquar_9669/
 
 ### 1. 環境設定
 
-在 GitHub 倉庫設定中新增以下 Secrets（Settings → Secrets and variables → Actions）：
-
-| Secret 名稱 | 說明 | 取得方式 |
-|------------|------|---------|
-| `BUFFER_ACCESS_TOKEN` | Buffer personal API key（Bearer token） | Buffer → Settings → API |
-| `BUFFER_CHANNEL_IDS` | 要發布的社群頻道 ID（JSON 陣列） | Buffer GraphQL API 查詢 |
-
-**`BUFFER_CHANNEL_IDS` 格式範例：**
-```json
-["6a605f5ee2638b94d7b1e3fe", "6a605f5ee2638b94d7b1e3ff"]
-```
-
-> ⚠️ 必須使用 Buffer **新版** personal API key（Bearer token），不是舊版 OAuth access token。舊版 token 會導致 `401 Unauthorized` 錯誤。
+所有發布憑證與頻道設定均應透過 GitHub Actions 的 Secrets 安全管理，不要將金鑰、Token、頻道識別碼或其他憑證寫入 README、程式碼、提交紀錄或公開討論。實際需要的 Secret 名稱與格式，請以目前啟用的 GitHub Actions 工作流程設定為準。
 
 ### 2. 驗證設定
 
@@ -220,11 +208,8 @@ schedule:
 
 ## 🔧 常見問題排查
 
-**401 Unauthorized**
-使用的是舊版 OAuth token，請改用新版 personal API key（Bearer token）。
-
-**Channel not found**
-`BUFFER_CHANNEL_IDS` 中的頻道 ID 無效，請透過 Buffer GraphQL API 重新查詢。
+**Buffer 驗證或頻道設定錯誤**
+請檢查 GitHub Actions 的 Secret 設定是否與目前工作流程一致，並確認 Buffer 頻道仍可正常使用。不要將任何金鑰或 Token 貼到 Issue、日誌或公開討論中。
 
 **圖片無法顯示**
 腳本使用 `raw.githubusercontent.com` URL 提供圖片，倉庫必須保持**公開（Public）**。若改為私有倉庫，圖片 URL 將失效。
