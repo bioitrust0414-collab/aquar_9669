@@ -2,11 +2,24 @@ name: Queue social posts to Buffer
 
 on:
   schedule:
-    - cron: "0 14 * * 0"   # 每週日 22:00 台北；腳本自己判斷是否到了下一批（每 3 週）
+    - cron: "0 14 * * 0" # Every Sunday at 22:00 Asia/Taipei
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Dry-run previews the batch; live creates scheduled posts in Buffer"
+        required: true
+        type: choice
+        options:
+          - dry-run
+          - live
+        default: dry-run
 
 permissions:
   contents: write
+
+concurrency:
+  group: buffer-social-queue
+  cancel-in-progress: false
 
 jobs:
   queue:
@@ -14,16 +27,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install requests
-      - name: Queue next batch
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install requests
+      - name: Validate and queue Buffer posts
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           BUFFER_CHANNEL_IDS: ${{ secrets.BUFFER_CHANNEL_IDS }}
-        run: python scripts/queue_batch_to_buffer.py
-      - name: Commit state
+          MODE: ${{ github.event_name == 'schedule' && 'live' || inputs.mode || 'dry-run' }}
+        run: python scripts/queue_batch_to_buffer.py --mode "$MODE"
+      - name: Commit queue state
+        if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/buffer-batch-state.json
-          git diff --cached --quiet || (git commit -m "chore: update buffer batch state" && git push)
+          git diff --cached --quiet || (git commit -m "chore: update Buffer batch state" && git push)
