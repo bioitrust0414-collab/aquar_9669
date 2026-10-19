@@ -150,7 +150,6 @@ aquar_9669/
 
 **`BUFFER_CHANNEL_IDS` 格式範例：**
 ```json
-["6a605f5ee2638b94d7b1e3fe", "6a605f5ee2638b94d7b1e3ff"]
 ```
 
 > ⚠️ 必須使用 Buffer **新版** personal API key（Bearer token），不是舊版 OAuth access token。舊版 token 會導致 `401 Unauthorized` 錯誤。
