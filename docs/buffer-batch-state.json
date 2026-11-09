@@ -1,6 +1,6 @@
 {
-  "last_batch_at": "2026-10-19T01:36:25Z",
-  "last_slot_date": "2026-11-09",
+  "last_batch_at": "2026-11-09T01:25:25Z",
+  "last_slot_date": "2026-11-30",
   "queued": [
     "aquar-001-microbiome-dynamics",
     "aquar-002-kepu-1.1-good-bad-bacteria",
@@ -41,6 +41,15 @@
     "aquar-037-kepu-9.1-quality-life",
     "aquar-038-kepu-9.2-market-reality",
     "aquar-039-kepu-9.3-autonomy",
-    "aquar-040-kepu-9.4-freedom-to-choose"
+    "aquar-040-kepu-9.4-freedom-to-choose",
+    "aquar-041-daily-ritual",
+    "aquar-042-kepu-4.1-me-time-value",
+    "aquar-043-kepu-4.2-ritual-sense",
+    "aquar-044-kepu-4.3-self-love-practice",
+    "aquar-045-kepu-4.4-sensory-healing",
+    "aquar-046-kepu-4.5-body-connection",
+    "aquar-047-microclimate",
+    "aquar-048-kepu-7.1-concept",
+    "aquar-049-kepu-7.2-taiwan-humidity"
   ]
 }
